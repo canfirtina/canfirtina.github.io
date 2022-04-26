@@ -18,7 +18,7 @@
   // limitations under the License.
 
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const months = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const zeroPad = n => n < 10 ? '0' + n : n;
 
   const RFC = function(date) {
@@ -108,26 +108,16 @@
 
   class FrontMatter {
     constructor() {
-      this.title = 'unnamed article'; // 'Attention and Augmented Recurrent Neural Networks'
-      this.description = ''; // 'A visual overview of neural attention...'
+      this.title = 'unnamed article'; // 
+      this.description = ''; // 
       this.authors = []; // Array of Author(s)
 
       this.bibliography = new Map();
       this.bibliographyParsed = false;
-      //  {
-      //    'gregor2015draw': {
-      //      'title': 'DRAW: A recurrent neural network for image generation',
-      //      'author': 'Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan',
-      //      'journal': 'arXiv preprint arXiv:1502.04623',
-      //      'year': '2015',
-      //      'url': 'https://arxiv.org/pdf/1502.04623.pdf',
-      //      'type': 'article'
-      //    },
-      //  }
 
       // Citation keys should be listed in the order that they are appear in the document.
       // Each key refers to a key in the bibliography dictionary.
-      this.citations = []; // [ 'gregor2015draw', 'mercier2011humans' ]
+      this.citations = []; // 
       this.citationsCollected = false;
 
       //
@@ -171,16 +161,6 @@
       this.doi = undefined;
       this.publishedDate = undefined;
     }
-
-    // Example:
-    // title: Demo Title Attention and Augmented Recurrent Neural Networks
-    // published: Jan 10, 2017
-    // authors:
-    // - Chris Olah:
-    // - Shan Carter: http://shancarter.com
-    // affiliations:
-    // - Google Brain:
-    // - Google Brain: http://g.co/brain
 
     //
     // Computed Properties
@@ -1684,7 +1664,7 @@ d-appendix > distill-appendix {
 
       function BibtexParser() {
           
-          this.months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+          this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
           this.notKey = [',','{','}',' ','='];
           this.pos = 0;
           this.input = "";
@@ -7351,9 +7331,9 @@ p small {
     time: "%-I:%M:%S %p",
     periods: ["AM", "PM"],
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    shortDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    shortDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    shortMonths: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   });
 
   function defaultLocale$1(definition) {

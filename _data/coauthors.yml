@@ -1,18 +1,51 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Mutlu":
+  - firstname: ["Onur", "O."]
+    url: https://people.inf.ethz.ch/omutlu/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Alkan":
+  - firstname: ["Can", "C."]
+    url: http://www.cs.bilkent.edu.tr/~calkan/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Senol Cali":
+  - firstname: ["Damla", "D."]
+    url: https://damlasenolcali.github.io
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Cali":
+  - firstname: ["Damla Senol", "D. S.", "Damla"]
+    url: https://damlasenolcali.github.io
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Kim": 
+  - firstname: ["Jeremie", "J. S.", "Jeremie S.", "Jeremie S"]
+    url: https://scholar.google.com/citations?user=-pOH1s4AAAAJ&hl=en
+
+"Cicek":
+  - firstname: ["Ercument", "A. Ercument", "A. E."]
+    url: http://ciceklab.cs.bilkent.edu.tr/ercument
+
+"Ghose":
+  - firstname: ["Saugata", "S."]
+    url: https://ghose.web.illinois.edu
+
+"Bar-Joseph":
+  - firstname: ["Ziv", "Z."]
+    url: https://www.cs.cmu.edu/~zivbj/
+
+"Tastan":
+  - firstname: ["Oznur", "O."]
+    url: http://people.sabanciuniv.edu/otastan/
+
+"Otlu":
+  - firstname: ["Burcak", "B.", "Burçak"]
+    url: https://burcak.ceng.metu.edu.tr
+
+"Subramoney":
+  - firstname: ["Sreenivas", "S.", "Sree"]
+    url: https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521
+
+"Subramoneyon":
+  - firstname: ["Sreenivas", "S.", "Sree"]
+    url: https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521
+
+"Kalsi":
+  - firstname: ["Gurpreet Singh", "Gurpreet S.", "Gurpreet", "G. S."]
+    url: https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302
