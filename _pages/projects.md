@@ -48,6 +48,7 @@ ___
   * Taha Shahroodi (TU Delft)
   * Juan Gomez-Luna (ETH Zurich)
   * Mohammed Alser (ETH Zurich)
+  * Giulia Guidi (UC Berkeley)
   * Joel Lindegger (ETH Zurich)
   * Nour Almadhoun Alserr (ETH Zurich)
   * Nika Mansouri Ghiasi (ETH Zurich)
