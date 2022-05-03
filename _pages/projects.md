@@ -9,7 +9,7 @@ nav: true
 ___
 ## Talks
 
-* Can Firtina, **"Enabling Accurate, Fast, and Memory-Efficient Genome Analysis via Efficient and Intelligent Algorithms"**, Invited Talk, *[Department of Electrical Engineering and Computer Sciences](https://eecs.berkeley.edu)*, UC Berkeley, Berkeley, CA, United States, May 2022.
+* Can Firtina, **"Enabling Accurate, Fast, and Memory-Efficient Genome Analysis via Efficient and Intelligent Algorithms"**, Invited Talk, *[Department of Electrical Engineering and Computer Sciences](https://eecs.berkeley.edu)*, UC Berkeley, Berkeley, CA, United States, May 27 2022.
 
 * Can Firtina, **"Enabling Accurate, Fast, and Memory-Efficient Genome Analysis via Efficient and Intelligent Algorithms"**, Invited Seminar Talk, *[BIN590 Graduate Seminar in Bioinformatics](https://catalog.metu.edu.tr/course.php?prog=908&course_code=9080590), [Graduate School of Informatics](http://www.ii.metu.edu.tr/)*, Middle East Technical University, Virtual, January 10 2022. [[Video]](https://www.youtube.com/watch?v=Y4KMqvUYF-E) [[Slides pdf]](https://safari.ethz.ch/projects_and_seminars/fall2021/lib/exe/fetch.php?media=firtina-metu-graduateseminar-enablingfastefficientgenomeanalysis-january-10-2022.pdf) [[Slides pptx]](https://safari.ethz.ch/projects_and_seminars/fall2021/lib/exe/fetch.php?media=firtina-metu-graduateseminar-enablingfastefficientgenomeanalysis-january-10-2022.pptx)
 
