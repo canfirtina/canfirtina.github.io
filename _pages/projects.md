@@ -11,7 +11,9 @@ ___
 
 * Can Firtina, **"Enabling Accurate, Fast, and Memory-Efficient Genome Analysis via Efficient and Intelligent Algorithms"**, Invited Talk, *[Department of Electrical Engineering and Computer Sciences](https://eecs.berkeley.edu)*, UC Berkeley, Berkeley, CA, United States, May 27 2022.
 
-* Can Firtina, **"Enabling Accurate, Fast, and Memory-Efficient Genome Analysis via Efficient and Intelligent Algorithms"**, Invited Seminar Talk, *[BIN590 Graduate Seminar in Bioinformatics](https://catalog.metu.edu.tr/course.php?prog=908&course_code=9080590), [Graduate School of Informatics](http://www.ii.metu.edu.tr/)*, Middle East Technical University, Virtual, January 10 2022. [[Video]](https://www.youtube.com/watch?v=Y4KMqvUYF-E) [[Slides pdf]](https://safari.ethz.ch/projects_and_seminars/fall2021/lib/exe/fetch.php?media=firtina-metu-graduateseminar-enablingfastefficientgenomeanalysis-january-10-2022.pdf) [[Slides pptx]](https://safari.ethz.ch/projects_and_seminars/fall2021/lib/exe/fetch.php?media=firtina-metu-graduateseminar-enablingfastefficientgenomeanalysis-january-10-2022.pptx)
+* Can Firtina, **"Enabling Accurate, Fast, and Memory-Efficient Genome Analysis via Efficient and Intelligent Algorithms"**, Invited Seminar Talk, *[BIN590 Graduate Seminar in Bioinformatics](https://catalog.metu.edu.tr/course.php?prog=908&course_code=9080590), [Graduate School of Informatics](http://www.ii.metu.edu.tr/)*, Middle East Technical University, Virtual, January 10 2022. [[Video]](https://www.youtube.com/watch?v=Y4KMqvUYF-E) [[Slides pdf]](/assets/slides/2022-01-10-firtina-METU-GraduateSeminar-EnablingFastEfficientGenomeAnalysis.pdf) [[Slides pptx]](/assets/slides/2022-01-10-firtina-METU-GraduateSeminar-EnablingFastEfficientGenomeAnalysis.pptx)
+
+* Can Firtina, **"Apollo: a sequencing-technology-independent, scalable and accurate assembly polishing algorithm"**, Workshop Talk, *ExaBiome/PASSION/SAFARI Workshop on Architectures and HPC for Genomics*, Virtual, May 26 2021. [[Video]](https://drive.google.com/file/d/1xujWwlTo1vvJ_3ujJ7L35s1mOvMSCLIG/view?usp=sharing) [[Slides pdf]](/assets/slides/2021-05-26-can-apollo-workshop.pdf) [[Slides pptx]](/assets/slides/2021-05-26-can-apollo-workshop.pptx)
 
 ___
 ## Selected Software
@@ -32,9 +34,10 @@ ___
 [GitHub Link](https://github.com/CMU-SAFARI/Apollo) \| [Paper](https://academic.oup.com/bioinformatics/article/36/12/3669/5804978?login=true)
 
 ___
-## Services
+## Services & Activities
 
   * Reviewer for BMC Bioinformatics, PACT, IEEE Micro, FAST, DSN, MICRO, ISCA, IEEE Transactions on Computers, ISCAS, ISPASS, HPCA, ASPLOS, USENIX ATC, and RECOMB.
+  * Organized the [ExaBiome/PASSION/SAFARI Workshop on Architectures and HPC for Genomics](https://docs.google.com/document/d/18P82z6FU40PcAwMvb62ltQ1SBBxy6IIVQSlTdDJ8Jfo/edit) workshop with [Giulia Guidi](https://giuliaguidi.github.io). The workshop included 10 presenters from [ExaBiome](https://sites.google.com/lbl.gov/exabiome), [PASSION](https://passion.lbl.gov), and [SAFARI](https://safari.ethz.ch). May 26 2022, Virtual.
 
 ___
 ## Collaborators

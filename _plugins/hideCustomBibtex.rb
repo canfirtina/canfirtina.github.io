@@ -2,11 +2,14 @@
   module HideCustomBibtex
     def hideCustomBibtex(input)
 	  keywords = @context.registers[:site].config['filtered_bibtex_keywords']
-
+    montha = "montha"
 	  keywords.each do |keyword|
-		input = input.gsub(/^.*#{keyword}.*$\n/, '')
+        if keyword != "montha"
+		      input = input.gsub(/^.*#{keyword}.*$\n/, '')
+        else
+          input = input.gsub(/#{keyword}/, 'month')
+        end
 	  end
-
       return input
     end
   end

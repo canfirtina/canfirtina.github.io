@@ -5,14 +5,14 @@
   title = {{ApHMM}: {A} {Profile} {Hidden} {Markov} {Model} {Acceleration} {Framework} for {Genome} {Analysis}},
   copyright = {Creative Commons Attribution 4.0 International},
   journal = {arXiv},
-  url = {},
-  author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Senol Cali, Damla and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gomez and Subramoney, Sreenivas and Mutlu, Onur},
+  author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Senol Cali, Damla and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and G{\'o}mez-Luna, Juan and Subramoney, Sreenivas and Mutlu, Onur},
   year = {2022},
   abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications as they can capture differences between biological sequences (e.g., DNA or protein sequences) to accurately identify their similarities. PHMMs represent sequences with a graph structure such that their states and edges are associated with probabilities to account for changes within sequences, which is then used to calculate a similarity score of a sequence compared to a pHMM graph. Accurately setting the probabilities in pHMMs is essential to correctly identify similarities between sequences. To achieve this, the Baum-Welch algorithm is a commonly-used and highly-accurate method that can change the probabilities of a pHMM to maximize the similarity score of a provided set of input sequences. However, the Baum-Welch algorithm is computationally expensive and existing works accelerate the Baum-Welch algorithm only for the widely-adopted traditional design of pHMMs, which cannot support all the bioinformatics applications using pHMMs.
   We propose ApHMM, the first hardware-software co-design framework to accelerate the Baum-Welch algorithm for a wide range of pHMM-based applications. ApHMM 1) uses a modified design of traditional pHMMs that can support the pHMM-based applications, 2) reduces the computational and data movement overheads of the Baum-Welch algorithm with software-level optimizations, and 3) provides a hardware design to accelerate the execution of the Baum-Welch algorithm for the modified design of pHMMs. We implement our software optimizations on both CPUs and GPUs, and hardware-software optimizations on a specialized hardware to provide an acceleration framework for all the pHMM-based applications. Our evaluation using a wide range of applications shows that ApHMM outperforms the state-of-the-art CPU implementations of three use cases 1) error correction, 2) protein family search, and 3) multiple sequence alignment by 59.94×, 1.75×, and 1.95×, respectively, while improving their energy efficiency by 64.24×, 1.75×, and 1.96×. When compared to CPU, GPU, and FPGA implementations, ApHMM accelerates the Baum-Welch computation by 15.55×-260.03×, 1.83×-5.34×, and 27.97×, respectively.},
   selected=true,
   montha={May},
   abbr={arXiv},
+  bibtex_show=true,
 }
 
 @article{alser_packaging_2022,
@@ -27,6 +27,7 @@
   doi = {10.48550/ARXIV.2203.16261},
   pdf={alser_2022_arxiv_packaging,_containerization,_and_virtualization_of_computational_omics_methods.pdf},
   abbr={arXiV},
+  bibtex_show=true,
 }
 
 @inproceedings{mansouri_ghiasi_genstore_2022,
@@ -52,6 +53,7 @@
   slides={https://people.inf.ethz.ch/omutlu/pub/GenStore_asplos22-talk.pdf},
   pptx={https://people.inf.ethz.ch/omutlu/pub/GenStore_asplos22-talk.pptx},
   video={https://www.youtube.com/watch?v=bv7hgXOOMjk},
+  bibtex_show=true,
 }
 
 @article{kim_fastremap_2022,
@@ -67,6 +69,7 @@
   pdf={kim_2022_arxiv_fastremap.pdf},
   code={https://github.com/CMU-SAFARI/FastRemap},
   abbr={arXiv},
+  bibtex_show=true,
 }
 
 @article{firtina_blend_2021,
@@ -83,6 +86,7 @@
   pdf={firtina_2021_arxiv_blend.pdf},
   code={https://github.com/CMU-SAFARI/BLEND},
   abbr={arXiv},
+  bibtex_show=true,
 }
 
 @article{onural_modeling_2021,
@@ -99,6 +103,7 @@
   year = {2021},
   pages = {203--232},
   pdf={onural_2021_modeling_economic_activities_and_random_catastrophic_failures_of_financial.pdf},
+  bibtex_show=true,
 }
 
 @article{kim_airlift_2021,
@@ -116,6 +121,7 @@
   pdf={kim_2019_arxiv_airlift.pdf},
   code={https://github.com/CMU-SAFARI/AirLift},
   abbr={bioRxiv},
+  bibtex_show=true,
 }
 
 @inproceedings{cali_genasm_2020,
@@ -127,7 +133,7 @@
   doi = {10.1109/MICRO50266.2020.00081},
   abstract = {Genome sequence analysis has enabled significant advancements in medical and scientific areas such as personalized medicine, outbreak tracing, and the understanding of evolution. To perform genome sequencing, devices extract small random fragments of an organism's DNA sequence (known as reads). The first step of genome sequence analysis is a computational process known as read mapping. In read mapping, each fragment is matched to its potential location in the reference genome with the goal of identifying the original location of each read in the genome. Unfortunately, rapid genome sequencing is currently bottlenecked by the computational power and memory bandwidth limitations of existing systems, as many of the steps in genome sequence analysis must process a large amount of data. A major contributor to this bottleneck is approximate string matching (ASM), which is used at multiple points during the mapping process. ASM enables read mapping to account for sequencing errors and genetic variations in the reads. We propose GenASM, the first ASM acceleration framework for genome sequence analysis. GenASM performs bitvectorbased ASM, which can efficiently accelerate multiple steps of genome sequence analysis. We modify the underlying ASM algorithm (Bitap) to significantly increase its parallelism and reduce its memory footprint. Using this modified algorithm, we design the first hardware accelerator for Bitap. Our hardware accelerator consists of specialized systolic-array-based compute units and on-chip SRAMs that are designed to match the rate of computation with memory capacity and bandwidth, resulting in an efficient design whose performance scales linearly as we increase the number of compute units working in parallel. We demonstrate that GenASM provides significant performance and power benefits for three different use cases in genome sequence analysis. First, GenASM accelerates read alignment for both long reads and short reads. For long reads, GenASM outperforms state-of-the-art software and hardware accelerators by 116× and 3.9×, respectively, while reducing power consumption by 37× and 2.7×. For short reads, GenASM outperforms state-of-the-art software and hardware accelerators by 111× and 1.9×. Second, GenASM accelerates pre-alignment filtering for short reads, with 3.7× the performance of a state-of-the-art pre-alignment filter, while reducing power consumption by 1.7× and significantly improving the filtering accuracy. Third, GenASM accelerates edit distance calculation, with 22-12501× and 9.3-400× speedups over the state-of-the-art software library and FPGA-based accelerator, respectively, while reducing power consumption by 548-582× and 67×. We conclude that GenASM is a flexible, high-performance, and low-power framework, and we briefly discuss four other use cases that can benefit from GenASM.},
   booktitle = {Proceedings of the 53rd {International} {Symposium} on {Microarchitecture}},
-  author = {Senol Cali, Damla and Kalsi, Gurpreet S. and Bingöl, Zülal and Firtina, Can and Subramanian, Lavanya and Kim, Jeremie S. and Ausavarungnirun, Rachata and Alser, Mohammed and Gomez-Luna, Juan and Boroumand, Amirali and Norion, Anant and Scibisz, Allison and Subramoney, Sreenivas and Alkan, Can and Ghose, Saugata and Mutlu, Onur},
+  author = {Senol Cali, Damla and Kalsi, Gurpreet S. and Bingöl, Zülal and Firtina, Can and Subramanian, Lavanya and Kim, Jeremie S. and Ausavarungnirun, Rachata and Alser, Mohammed and G{\'o}mez-Luna, Juan and Boroumand, Amirali and Norion, Anant and Scibisz, Allison and Subramoney, Sreenivas and Alkan, Can and Ghose, Saugata and Mutlu, Onur},
   year = {2020},
   montha={October},
   pages = {951--966},
@@ -137,6 +143,7 @@
   slides={https://people.inf.ethz.ch/omutlu/pub/GenASM-approximate-string-matching-framework-for-genome-analysis_micro20-talk.pdf},
   pptx={https://people.inf.ethz.ch/omutlu/pub/GenASM-approximate-string-matching-framework-for-genome-analysis_micro20-talk.pptx},
   video={http://www.youtube.com/watch?v=XoLpzmN-Pas},
+  bibtex_show=true,
 }
 
 @article{firtina_apollo_2020,
@@ -157,6 +164,7 @@
   pdf={firtina_2020_apollo.pdf},
   code={https://github.com/CMU-SAFARI/Apollo},
   abbr={Bioinformatics},
+  bibtex_show=true,
 }
 
 @article{firtina_hercules_2018,
@@ -176,6 +184,7 @@
   pdf={firtina_2018_hercules.pdf},
   code={https://github.com/BilkentCompGen/hercules},
   abbr={NAR},
+  bibtex_show=true,
 }
 
 @article{otlu_glanet_2017,
@@ -195,6 +204,7 @@
   pdf={otlu_2017_glanet.pdf},
   code={https://github.com/burcakotlu/GLANET},
   abbr={Bioinformatics},
+  bibtex_show=true,
 }
 
 @article{firtina_genomic_2016,
@@ -213,4 +223,5 @@
   pdf={firtina_2016_on_genomic_repeats_and_reproducibility.pdf},
   code={https://zenodo.org/record/32611#.YmcGgy8RqPw},
   abbr={Bioinformatics},
+  bibtex_show=true,
 }
