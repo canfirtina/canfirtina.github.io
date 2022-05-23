@@ -15,6 +15,39 @@
   bibtex_show=true,
 }
 
+@article{cali_segram_2022,
+  title = {SeGraM: A Universal Hardware Accelerator for Genomic Sequence-to-Graph and Sequence-to-Sequence Mapping},
+  copyright = {Creative Commons Attribution 4.0 International},
+  url = {https://arxiv.org/abs/2205.05883},
+  journal = {arXiv},
+  abstract = {A critical step of genome sequence analysis is the mapping of sequenced DNA fragments (i.e., reads) collected from an individual to a known linear reference genome sequence (i.e., sequence-to-sequence mapping). Recent works replace the linear reference sequence with a graph-based representation of the reference genome, which captures the genetic variations and diversity across many individuals in a population. Mapping reads to the graph-based reference genome (i.e., sequence-to-graph mapping) results in notable quality improvements in genome analysis. Unfortunately, while sequence-to-sequence mapping is well studied with many available tools and accelerators, sequence-to-graph mapping is a more difficult computational problem, with a much smaller number of practical software tools currently available. 
+  We analyze two state-of-the-art sequence-to-graph mapping tools and reveal four key issues. We find that there is a pressing need to have a specialized, high-performance, scalable, and low-cost algorithm/hardware co-design that alleviates bottlenecks in both the seeding and alignment steps of sequence-to-graph mapping. 
+  To this end, we propose SeGraM, a universal algorithm/hardware co-designed genomic mapping accelerator that can effectively and efficiently support both sequence-to-graph mapping and sequence-to-sequence mapping, for both short and long reads. To our knowledge, SeGraM is the first algorithm/hardware co-design for accelerating sequence-to-graph mapping. SeGraM consists of two main components: (1) MinSeed, the first minimizer-based seeding accelerator; and (2) BitAlign, the first bitvector-based sequence-to-graph alignment accelerator. 
+  We demonstrate that SeGraM provides significant improvements for multiple steps of the sequence-to-graph and sequence-to-sequence mapping pipelines.},
+  author = {Senol Cali, Damla and Kanellopoulos, Konstantinos and Lindegger, Joel and Bingöl, Zülal and Kalsi, Gurpreet S. and Zuo, Ziyi and Firtina, Can and Cavlak, Meryem Banu and Kim, Jeremie and Ghiasi, Nika Mansouri and Singh, Gagandeep and Gómez-Luna, Juan and Alserr, Nour Almadhoun and Alser, Mohammed and Subramoney, Sreenivas and Alkan, Can and Ghose, Saugata and Mutlu, Onur},
+  year = {2022},
+  montha={May},
+  doi = {10.48550/ARXIV.2205.05883},
+  pdf={https://arxiv.org/pdf/2205.05883.pdf},
+  abbr={arXiV},
+  bibtex_show=true,
+}
+
+@article{alser_going_2022,
+  title = {Going From Molecules to Genomic Variations to Scientific Discovery: Intelligent Algorithms and Architectures for Intelligent Genome Analysis},
+  copyright = {Creative Commons Attribution 4.0 International},
+  url = {https://arxiv.org/abs/2205.07957},
+  journal = {arXiv},
+  abstract = {We now need more than ever to make genome analysis more intelligent. We need to read, analyze, and interpret our genomes not only quickly, but also accurately and efficiently enough to scale the analysis to population level. There currently exist major computational bottlenecks and inefficiencies throughout the entire genome analysis pipeline, because state-of-the-art genome sequencing technologies are still not able to read a genome in its entirety. We describe the ongoing journey in significantly improving the performance, accuracy, and efficiency of genome analysis using intelligent algorithms and hardware architectures. We explain state-of-the-art algorithmic methods and hardware-based acceleration approaches for each step of the genome analysis pipeline and provide experimental evaluations. Algorithmic approaches exploit the structure of the genome as well as the structure of the underlying hardware. Hardware-based acceleration approaches exploit specialized microarchitectures or various execution paradigms (e.g., processing inside or near memory) along with algorithmic changes, leading to new hardware/software co-designed systems. We conclude with a foreshadowing of future challenges, benefits, and research directions triggered by the development of both very low cost yet highly error prone new sequencing technologies and specialized hardware chips for genomics. We hope that these efforts and the challenges we discuss provide a foundation for future work in making genome analysis more intelligent. The analysis script and data used in our experimental evaluation are available at https://github.com/CMU-SAFARI/Molecules2Variations},
+  author = {Alser, Mohammed and Lindegger, Joel and Firtina, Can and Almadhoun, Nour and Mao, Haiyu and Singh, Gagandeep and Gomez-Luna, Juan and Mutlu, Onur},
+  year = {2022},
+  montha={May},
+  doi = {10.48550/ARXIV.2205.07957},
+  pdf={https://arxiv.org/pdf/2205.07957.pdf},
+  abbr={arXiV},
+  bibtex_show=true,
+}
+
 @article{alser_packaging_2022,
   title = {Packaging, containerization, and virtualization of computational omics methods: {Advances}, challenges, and opportunities},
   copyright = {Creative Commons Attribution 4.0 International},
