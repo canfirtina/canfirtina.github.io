@@ -1,36 +1,58 @@
 ---
 ---
 
+@inproceedings{cali_segram_2022,
+  address = {New York, NY, USA},
+  series = {{ISCA} '22},
+  title = {{SeGraM}: {A} {Universal} {Hardware} {Accelerator} for {Genomic} {Sequence}-to-{Graph} and {Sequence}-to-{Sequence} {Mapping}},
+  isbn = {978-1-4503-8610-4},
+  url = {https://doi.org/10.1145/3470496.3527436},
+  doi = {10.1145/3470496.3527436},
+  abstract = {A critical step of genome sequence analysis is the mapping of sequenced DNA fragments (i.e., reads) collected from an individual to a known linear reference genome sequence (i.e., sequence-to-sequence mapping). Recent works replace the linear reference sequence with a graph-based representation of the reference genome, which captures the genetic variations and diversity across many individuals in a population. Mapping reads to the graph-based reference genome (i.e., sequence-to-graph mapping) results in notable quality improvements in genome analysis. Unfortunately, while sequence-to-sequence mapping is well studied with many available tools and accelerators, sequence-to-graph mapping is a more difficult computational problem, with a much smaller number of practical software tools currently available.We analyze two state-of-the-art sequence-to-graph mapping tools and reveal four key issues. We find that there is a pressing need to have a specialized, high-performance, scalable, and low-cost algorithm/hardware co-design that alleviates bottlenecks in both the seeding and alignment steps of sequence-to-graph mapping. Since sequence-to-sequence mapping can be treated as a special case of sequence-to-graph mapping, we aim to design an accelerator that is efficient for both linear and graph-based read mapping.To this end, we propose SeGraM, a universal algorithm/hardware co-designed genomic mapping accelerator that can effectively and efficiently support both sequence-to-graph mapping and sequence-to-sequence mapping, for both short and long reads. To our knowledge, SeGraM is the first algorithm/hardware co-design for accelerating sequence-to-graph mapping. SeGraM consists of two main components: (1) MinSeed, the first minimizer-based seeding accelerator, which finds the candidate locations in a given genome graph; and (2) BitAlign, the first bitvector-based sequence-to-graph alignment accelerator, which performs alignment between a given read and the subgraph identified by MinSeed. We couple SeGraM with high-bandwidth memory to exploit low latency and highly-parallel memory access, which alleviates the memory bottleneck.We demonstrate that SeGraM provides significant improvements for multiple steps of the sequence-to-graph (i.e., S2G) and sequence-to-sequence (i.e., S2S) mapping pipelines. First, SeGraM outperforms state-of-the-art S2G mapping tools by 5.9×/3.9× and 106×/- 742× for long and short reads, respectively, while reducing power consumption by 4.1×/4.4× and 3.0×/3.2×. Second, BitAlign outperforms a state-of-the-art S2G alignment tool by 41×-539× and three S2S alignment accelerators by 1.2×-4.8×. We conclude that SeGraM is a high-performance and low-cost universal genomics mapping accelerator that efficiently supports both sequence-to-graph and sequence-to-sequence mapping pipelines.},
+  booktitle = {Proceedings of the 49th {Annual} {International} {Symposium} on {Computer} {Architecture}},
+  publisher = {Association for Computing Machinery},
+  author = {Cali, Damla Senol and Kanellopoulos, Konstantinos and Lindegger, Joël and Bingöl, Zülal and Kalsi, Gurpreet S. and Zuo, Ziyi and Firtina, Can and Cavlak, Meryem Banu and Kim, Jeremie and Ghiasi, Nika Mansouri and Singh, Gagandeep and Gómez-Luna, Juan and Alserr, Nour Almadhoun and Alser, Mohammed and Subramoney, Sreenivas and Alkan, Can and Ghose, Saugata and Mutlu, Onur},
+  year = {2022},
+  montha={June},
+  slides={https://people.inf.ethz.ch/omutlu/pub/SeGraM_genomic-sequence-mapping-universal-accelerator_isca22-talk.pdf},
+  pptx={https://people.inf.ethz.ch/omutlu/pub/SeGraM_genomic-sequence-mapping-universal-accelerator_isca22-talk.pptx},
+  pages = {638--655},
+  pdf={https://people.inf.ethz.ch/omutlu/pub/SeGraM_genomic-sequence-mapping-universal-accelerator_isca22.pdf},
+  abbr={ISCA},
+  bibtex_show=true,
+}
+
+@article{shahroodi_demeter_2022,
+  title = {Demeter: {A} {Fast} and {Energy}-{Efficient} {Food} {Profiler} using {Hyperdimensional} {Computing} in {Memory}},
+  copyright = {Creative Commons Attribution 4.0 International},
+  url = {https://arxiv.org/abs/2206.01932},
+  abstract = {Food profiling is an essential step in any food monitoring system needed to prevent health risks and potential frauds in the food industry. Significant improvements in sequencing technologies are pushing food profiling to become the main computational bottleneck. State-of-the-art profilers are unfortunately too costly for food profiling. 
+Our goal is to design a food profiler that solves the main limitations of existing profilers, namely (1) working on massive data structures and (2) incurring considerable data movement, for a real-time monitoring system. To this end, we propose Demeter, the first platform-independent framework for food profiling. Demeter overcomes the first limitation through the use of hyperdimensional computing (HDC) and efficiently performs the accurate few-species classification required in food profiling. We overcome the second limitation by the use of an in-memory hardware accelerator for Demeter (named Acc-Demeter) based on memristor devices. Acc-Demeter actualizes several domain-specific optimizations and exploits the inherent characteristics of memristors to improve the overall performance and energy consumption of Acc-Demeter. 
+We compare Demeter's accuracy with other industrial food profilers using detailed software modeling. We synthesize Acc-Demeter's required hardware using UMC's 65nm library by considering an accurate PCM model based on silicon-based prototypes. Our evaluations demonstrate that Acc-Demeter achieves a (1) throughput improvement of 192x and 724x and (2) memory reduction of 36x and 33x compared to Kraken2 and MetaCache (2 state-of-the-art profilers), respectively, on typical food-related databases. Demeter maintains an acceptable profiling accuracy (within 2\% of existing tools) and incurs a very low area overhead.},
+  publisher = {arXiv},
+  author = {Shahroodi, Taha and Zahedi, Mahdi and Firtina, Can and Alser, Mohammed and Wong, Stephan and Mutlu, Onur and Hamdioui, Said},
+  year = {2022},
+  montha = {June},
+  doi = {10.48550/ARXIV.2206.01932},
+  pdf={https://arxiv.org/pdf/2206.01932.pdf},
+  abbr={IEEE Access},
+  bibtex_show=true,
+}
+
 @article{firtina_aphmm_2022,
   title = {{ApHMM}: {A} {Profile} {Hidden} {Markov} {Model} {Acceleration} {Framework} for {Genome} {Analysis}},
   copyright = {Creative Commons Attribution 4.0 International},
   journal = {arXiv},
   author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Senol Cali, Damla and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and G{\'o}mez-Luna, Juan and Subramoney, Sreenivas and Mutlu, Onur},
   year = {2022},
-  abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications as they can capture differences between biological sequences (e.g., DNA or protein sequences) to accurately identify their similarities. PHMMs represent sequences with a graph structure such that their states and edges are associated with probabilities to account for changes within sequences, which is then used to calculate a similarity score of a sequence compared to a pHMM graph. Accurately setting the probabilities in pHMMs is essential to correctly identify similarities between sequences. To achieve this, the Baum-Welch algorithm is a commonly-used and highly-accurate method that can change the probabilities of a pHMM to maximize the similarity score of a provided set of input sequences. However, the Baum-Welch algorithm is computationally expensive and existing works accelerate the Baum-Welch algorithm only for the widely-adopted traditional design of pHMMs, which cannot support all the bioinformatics applications using pHMMs.
-  We propose ApHMM, the first hardware-software co-design framework to accelerate the Baum-Welch algorithm for a wide range of pHMM-based applications. ApHMM 1) uses a modified design of traditional pHMMs that can support the pHMM-based applications, 2) reduces the computational and data movement overheads of the Baum-Welch algorithm with software-level optimizations, and 3) provides a hardware design to accelerate the execution of the Baum-Welch algorithm for the modified design of pHMMs. We implement our software optimizations on both CPUs and GPUs, and hardware-software optimizations on a specialized hardware to provide an acceleration framework for all the pHMM-based applications. Our evaluation using a wide range of applications shows that ApHMM outperforms the state-of-the-art CPU implementations of three use cases 1) error correction, 2) protein family search, and 3) multiple sequence alignment by 59.94×, 1.75×, and 1.95×, respectively, while improving their energy efficiency by 64.24×, 1.75×, and 1.96×. When compared to CPU, GPU, and FPGA implementations, ApHMM accelerates the Baum-Welch computation by 15.55×-260.03×, 1.83×-5.34×, and 27.97×, respectively.},
+  abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
+  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.},
   selected=true,
-  montha={May},
+  montha={July},
   abbr={arXiv},
   bibtex_show=true,
-}
-
-@article{cali_segram_2022,
-  title = {SeGraM: A Universal Hardware Accelerator for Genomic Sequence-to-Graph and Sequence-to-Sequence Mapping},
-  copyright = {Creative Commons Attribution 4.0 International},
-  url = {https://arxiv.org/abs/2205.05883},
-  journal = {arXiv},
-  abstract = {A critical step of genome sequence analysis is the mapping of sequenced DNA fragments (i.e., reads) collected from an individual to a known linear reference genome sequence (i.e., sequence-to-sequence mapping). Recent works replace the linear reference sequence with a graph-based representation of the reference genome, which captures the genetic variations and diversity across many individuals in a population. Mapping reads to the graph-based reference genome (i.e., sequence-to-graph mapping) results in notable quality improvements in genome analysis. Unfortunately, while sequence-to-sequence mapping is well studied with many available tools and accelerators, sequence-to-graph mapping is a more difficult computational problem, with a much smaller number of practical software tools currently available. 
-  We analyze two state-of-the-art sequence-to-graph mapping tools and reveal four key issues. We find that there is a pressing need to have a specialized, high-performance, scalable, and low-cost algorithm/hardware co-design that alleviates bottlenecks in both the seeding and alignment steps of sequence-to-graph mapping. 
-  To this end, we propose SeGraM, a universal algorithm/hardware co-designed genomic mapping accelerator that can effectively and efficiently support both sequence-to-graph mapping and sequence-to-sequence mapping, for both short and long reads. To our knowledge, SeGraM is the first algorithm/hardware co-design for accelerating sequence-to-graph mapping. SeGraM consists of two main components: (1) MinSeed, the first minimizer-based seeding accelerator; and (2) BitAlign, the first bitvector-based sequence-to-graph alignment accelerator. 
-  We demonstrate that SeGraM provides significant improvements for multiple steps of the sequence-to-graph and sequence-to-sequence mapping pipelines.},
-  author = {Senol Cali, Damla and Kanellopoulos, Konstantinos and Lindegger, Joel and Bingöl, Zülal and Kalsi, Gurpreet S. and Zuo, Ziyi and Firtina, Can and Cavlak, Meryem Banu and Kim, Jeremie and Ghiasi, Nika Mansouri and Singh, Gagandeep and Gómez-Luna, Juan and Alserr, Nour Almadhoun and Alser, Mohammed and Subramoney, Sreenivas and Alkan, Can and Ghose, Saugata and Mutlu, Onur},
-  year = {2022},
-  montha={May},
-  doi = {10.48550/ARXIV.2205.05883},
-  pdf={https://arxiv.org/pdf/2205.05883.pdf},
-  abbr={arXiV},
-  bibtex_show=true,
+  pdf={firtina_2022_arxiv_aphmm.pdf},
+  code={https://github.com/CMU-SAFARI/ApHMM-GPU},
 }
 
 @article{alser_going_2022,
@@ -108,9 +130,11 @@
 @article{firtina_blend_2021,
   title = {{BLEND}: {A} {Fast}, {Memory}-{Efficient}, and {Accurate} {Mechanism} to {Find} {Fuzzy} {Seed} {Matches}},
   copyright = {All rights reserved},
-  url = {https://arxiv.org/abs/2112.08687},
+  url = {https://doi.org/10.48550/ARXIV.2112.08687},
   journal = {arXiv},
-  abstract = {Comparing genomic sequences is a fundamental yet costly step in most genomic analyses. It requires identifying similar genomic sequence pairs sharing a sufficient number of short subsequences, called seeds. The length and number of seed matches between sequences directly impact the sensitivity, performance, and memory footprint of today's read mappers. Existing attempts optimizing seed matches suffer from either 1) increasing the use of the costly sequence alignment step due to finding a large number of sequence pairs for alignment or 2) limited sensitivity when finding seed matches. Our goal is to efficiently and effectively identify potentially similar sequences using a small number of seed matches, while tolerating variations within each seed. To this end, we introduce BLEND, a fast, memory-efficient, and accurate mechanism to find approximate (i.e., fuzzy) seed matches. BLEND 1) finds the minimizer k-mers and extends them to increase the length of seeds and 2) utilizes the SimHash technique to enable generating the same hash values for highly similar seeds, which allows matching fuzzy seeds with a single-look up. We show the benefits of BLEND when used in two important genomics applications: read overlapping and read mapping. For read overlapping, BLEND enables a 2.6x-63.5x (on average 19.5x) faster and 0.9x-9.7x (on average 3.6x) more memory-efficient implementation than the state-of-the-art tool, Minimap2. We observe that BLEND finds better quality overlaps that lead to more accurate de novo assemblies compared to Minimap2. For read mapping, BLEND provides 0.7x-3.7x (on average 1.7x) speedup compared to Minimap2.},
+  abstract = {Generating the hash values of short subsequences, called seeds, enables quickly identifying similarities between genomic sequences by matching seeds with a single lookup of their hash values. However, these hash values can be used only for finding exact-matching seeds as the conventional hashing methods assign distinct hash values for different seeds, including highly similar seeds. Finding only exact-matching seeds causes either 1) increasing the use of the costly sequence alignment or 2) limited sensitivity.
+  We introduce BLEND, the first efficient and accurate mechanism that can identify both exact-matching and highly similar seeds with a single lookup of their hash values, called fuzzy seeds matches. BLEND 1) utilizes a technique called SimHash, that can generate the same hash value for similar sets, and 2) provides the proper mechanisms for using seeds as sets with the SimHash technique to find fuzzy seed matches efficiently.
+  We show the benefits of BLEND when used in read overlapping and read mapping. For read overlapping, BLEND is faster by 2.6x-63.5x (on average 19.5x), has a lower memory footprint by 0.9x-9.7x (on average 3.6x), and finds higher quality overlaps leading to accurate de novo assemblies than the state-of-the-art tool, minimap2. For read mapping, BLEND is faster by 0.7x-3.7x (on average 1.7x) than minimap2. Source code is available at https://github.com/CMU-SAFARI/BLEND.},
   author = {Firtina, Can and Park, Jisung and Alser, Mohammed and Kim, Jeremie S. and Senol Cali, Damla and Shahroodi, Taha and Ghiasi, Nika Mansouri and Singh, Gagandeep and Kanellopoulos, Konstantinos and Alkan, Can and Mutlu, Onur},
   year = {2021},
   montha={December},
