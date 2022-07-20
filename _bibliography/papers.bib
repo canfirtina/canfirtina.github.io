@@ -1,5 +1,20 @@
 ---
 ---
+@article{firtina_aphmm_2022,
+  title = {{ApHMM}: {A} {Profile} {Hidden} {Markov} {Model} {Acceleration} {Framework} for {Genome} {Analysis}},
+  copyright = {Creative Commons Attribution 4.0 International},
+  journal = {arXiv},
+  author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Senol Cali, Damla and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and G{\'o}mez-Luna, Juan and Subramoney, Sreenivas and Mutlu, Onur},
+  year = {2022},
+  abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
+  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.},
+  selected=true,
+  montha={July},
+  abbr={arXiv},
+  bibtex_show=true,
+  pdf={firtina_2022_arxiv_aphmm.pdf},
+  code={https://github.com/CMU-SAFARI/ApHMM-GPU},
+}
 
 @inproceedings{cali_segram_2022,
   address = {New York, NY, USA},
@@ -29,7 +44,7 @@
   abstract = {Food profiling is an essential step in any food monitoring system needed to prevent health risks and potential frauds in the food industry. Significant improvements in sequencing technologies are pushing food profiling to become the main computational bottleneck. State-of-the-art profilers are unfortunately too costly for food profiling. 
 Our goal is to design a food profiler that solves the main limitations of existing profilers, namely (1) working on massive data structures and (2) incurring considerable data movement, for a real-time monitoring system. To this end, we propose Demeter, the first platform-independent framework for food profiling. Demeter overcomes the first limitation through the use of hyperdimensional computing (HDC) and efficiently performs the accurate few-species classification required in food profiling. We overcome the second limitation by the use of an in-memory hardware accelerator for Demeter (named Acc-Demeter) based on memristor devices. Acc-Demeter actualizes several domain-specific optimizations and exploits the inherent characteristics of memristors to improve the overall performance and energy consumption of Acc-Demeter. 
 We compare Demeter's accuracy with other industrial food profilers using detailed software modeling. We synthesize Acc-Demeter's required hardware using UMC's 65nm library by considering an accurate PCM model based on silicon-based prototypes. Our evaluations demonstrate that Acc-Demeter achieves a (1) throughput improvement of 192x and 724x and (2) memory reduction of 36x and 33x compared to Kraken2 and MetaCache (2 state-of-the-art profilers), respectively, on typical food-related databases. Demeter maintains an acceptable profiling accuracy (within 2\% of existing tools) and incurs a very low area overhead.},
-  publisher = {arXiv},
+  journal = {arXiv},
   author = {Shahroodi, Taha and Zahedi, Mahdi and Firtina, Can and Alser, Mohammed and Wong, Stephan and Mutlu, Onur and Hamdioui, Said},
   year = {2022},
   montha = {June},
@@ -37,22 +52,6 @@ We compare Demeter's accuracy with other industrial food profilers using detaile
   pdf={https://arxiv.org/pdf/2206.01932.pdf},
   abbr={IEEE Access},
   bibtex_show=true,
-}
-
-@article{firtina_aphmm_2022,
-  title = {{ApHMM}: {A} {Profile} {Hidden} {Markov} {Model} {Acceleration} {Framework} for {Genome} {Analysis}},
-  copyright = {Creative Commons Attribution 4.0 International},
-  journal = {arXiv},
-  author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Senol Cali, Damla and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and G{\'o}mez-Luna, Juan and Subramoney, Sreenivas and Mutlu, Onur},
-  year = {2022},
-  abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
-  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.},
-  selected=true,
-  montha={July},
-  abbr={arXiv},
-  bibtex_show=true,
-  pdf={firtina_2022_arxiv_aphmm.pdf},
-  code={https://github.com/CMU-SAFARI/ApHMM-GPU},
 }
 
 @article{alser_going_2022,
