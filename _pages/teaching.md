@@ -12,7 +12,7 @@ ___
 ### Teaching
 
 * Digital Design and Computer Architecture (Spring 2019 - Spring 2022)
-* Computer Architecture (Fall 2018 - Fall 2021)
+* Computer Architecture (Fall 2018 - Fall 2022)
 * Seminar in Computer Architecture (Spring/Fall 2018 - Spring/Fall 2022)
 * Genome Sequencing on Mobile Devices (Spring/Fall 2020 - Spring/Fall 2022)
 * Accelerating Genome Analysis with FPGAs, GPUs, and New Execution Paradigms (Spring/Fall 2020 - Spring/Fall 2022)

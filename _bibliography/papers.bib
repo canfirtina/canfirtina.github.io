@@ -1,5 +1,20 @@
 ---
 ---
+@article{mao_genpip_2022,
+  title = {GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping},
+  journal = {arXiv},
+  author = {Mao, Haiyu and Alser, Mohammed and Sadrosadati, Mohammad and Firtina, Can and Baranwal, Akanksha and Cali, Damla Senol and Manglik, Aditya and Alserr, Nour Almadhoun and Mutlu, Onur},
+  year = {2022},
+  abstract = {Nanopore sequencing is a widely-used high-throughput genome sequencing technology that can sequence long fragments of a genome into raw electrical signals at low cost. Nanopore sequencing requires two computationally-costly processing steps for accurate downstream genome analysis. The first step, basecalling, translates the raw electrical signals into nucleotide bases (i.e., A, C, G, T). The second step, read mapping, finds the correct location of a read in a reference genome. In existing genome analysis pipelines, basecalling and read mapping are executed separately. We observe in this work that such separate execution of the two most time-consuming steps inherently leads to (1) significant data movement and (2) redundant computations on the data, slowing down the genome analysis pipeline. 
+  This paper proposes GenPIP, an in-memory genome analysis accelerator that tightly integrates basecalling and read mapping. GenPIP improves the performance of the genome analysis pipeline with two key mechanisms: (1) in-memory fine-grained collaborative execution of the major genome analysis steps in parallel; (2) a new technique for early-rejection of low-quality and unmapped reads to timely stop the execution of genome analysis for such reads, reducing inefficient computation. Our experiments show that, for the execution of the genome analysis pipeline, GenPIP provides 41.6X (8.4X) speedup and 32.8X (20.8X) energy savings with negligible accuracy loss compared to the state-of-the-art software genome analysis tools executed on a state-of-the-art CPU (GPU). Compared to a design that combines state-of-the-art in-memory basecalling and read mapping accelerators, GenPIP provides 1.39X speedup and 1.37X energy savings.},
+  montha={September},
+  abbr={arXiv},
+  bibtex_show=true,
+  pdf={https://arxiv.org/pdf/2209.08600.pdf},
+  url = {https://arxiv.org/abs/2209.08600},
+  doi = {10.48550/ARXIV.2209.08600},
+}
+
 @article{firtina_aphmm_2022,
   title = {ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis},
   copyright = {Creative Commons Attribution 4.0 International},
@@ -101,7 +116,7 @@
 }
 
 @inproceedings{mansouri_ghiasi_genstore_2022,
-  address = {New York, NY, USA},
+  address = {Lausanne, Switzerland},
   series = {{ASPLOS} 2022},
   title = {{GenStore}: {A} {High}-{Performance} in-{Storage} {Processing} {System} for {Genome} {Sequence} {Analysis}},
   copyright = {All rights reserved},
@@ -210,7 +225,6 @@
   doi = {10.1093/bioinformatics/btaa179},
   abstract = {Third-generation sequencing technologies can sequence long reads that contain as many as 2 million base pairs. These long reads are used to construct an assembly (i.e. the subject’s genome), which is further used in downstream genome analysis. Unfortunately, third-generation sequencing technologies have high sequencing error rates and a large proportion of base pairs in these long reads is incorrectly identified. These errors propagate to the assembly and affect the accuracy of genome analysis. Assembly polishing algorithms minimize such error propagation by polishing or fixing errors in the assembly by using information from alignments between reads and the assembly (i.e. read-to-assembly alignment information). However, current assembly polishing algorithms can only polish an assembly using reads from either a certain sequencing technology or a small assembly. Such technology-dependency and assembly-size dependency require researchers to (i) run multiple polishing algorithms and (ii) use small chunks of a large genome to use all available readsets and polish large genomes, respectively.We introduce Apollo, a universal assembly polishing algorithm that scales well to polish an assembly of any size (i.e. both large and small genomes) using reads from all sequencing technologies (i.e. second- and third-generation). Our goal is to provide a single algorithm that uses read sets from all available sequencing technologies to improve the accuracy of assembly polishing and that can polish large genomes. Apollo (i) models an assembly as a profile hidden Markov model (pHMM), (ii) uses read-to-assembly alignment to train the pHMM with the Forward–Backward algorithm and (iii) decodes the trained model with the Viterbi algorithm to produce a polished assembly. Our experiments with real readsets demonstrate that Apollo is the only algorithm that (i) uses reads from any sequencing technology within a single run and (ii) scales well to polish large assemblies without splitting the assembly into multiple parts. Source code is available at https://github.com/CMU-SAFARI/Apollo. Supplementary data are available at Bioinformatics online.},
   number = {12},
-  urldate = {2022-04-13},
   journal = {Bioinformatics},
   author = {Firtina, Can and Kim, Jeremie S. and Alser, Mohammed and Senol Cali, Damla and Cicek, A Ercument and Alkan, Can and Mutlu, Onur},
   montha={June},
@@ -231,7 +245,6 @@
   doi = {10.1093/nar/gky724},
   abstract = {Choosing whether to use second or third generation sequencing platforms can lead to trade-offs between accuracy and read length. Several types of studies require long and accurate reads. In such cases researchers often combine both technologies and the erroneous long reads are corrected using the short reads. Current approaches rely on various graph or alignment based techniques and do not take the error profile of the underlying technology into account. Efficient machine learning algorithms that address these shortcomings have the potential to achieve more accurate integration of these two technologies. We propose Hercules, the first machine learning-based long read error correction algorithm. Hercules models every long read as a profile Hidden Markov Model with respect to the underlying platform’s error profile. The algorithm learns a posterior transition/emission probability distribution for each long read to correct errors in these reads. We show on two DNA-seq BAC clones (CH17-157L1 and CH17-227A2) that Hercules-corrected reads have the highest mapping rate among all competing algorithms and have the highest accuracy when the breadth of coverage is high. On a large human CHM1 cell line WGS data set, Hercules is one of the few scalable algorithms; and among those, it achieves the highest accuracy.},
   number = {21},
-  urldate = {2022-04-13},
   journal = {Nucleic Acids Research},
   author = {Firtina, Can and Bar-Joseph, Ziv and Alkan, Can and Cicek, A. Ercument},
   montha={November},
