@@ -1,6 +1,21 @@
 ---
 ---
 
+@article{kanellopoulos_utopia_2022,
+  title = {Utopia: Efficient Address Translation using Hybrid Virtual-to-Physical Address Mapping},
+  copyright = {Creative Commons Attribution 4.0 International},
+  journal = {arXiv},
+  author = {Kanellopoulos, Konstantinos and Bera, Rahul and Stojiljkovic, Kosta and Firtina, Can and Ausavarungnirun, Rachata and Hajinazar, Nastaran and Park, Jisung and Vijaykumar, Nandita and Mutlu, Onur},
+  year = {2022},
+  abstract = {The conventional virtual-to-physical address mapping scheme enables a virtual address to flexibly map to any physical address. This flexibility necessitates large data structures to store virtual-to-physical mappings, which incurs significantly high address translation latency and translation-induced interference in the memory hierarchy, especially in data-intensive workloads. Restricting the address mapping so that a virtual address can map to only a specific set of physical addresses can significantly reduce the overheads associated with the conventional address translation by making use of compact and more efficient translation structures. However, restricting the address mapping flexibility across the entire main memory severely limits data sharing across different processes and increases memory under-utilization. In this work, we propose Utopia, a new hybrid virtual-to-physical address mapping scheme that allows both flexible and restrictive hash-based address mapping schemes to co-exist in a system. The key idea of Utopia is to manage the physical memory using two types of physical memory segments: restrictive segments and flexible segments. A restrictive segment uses a restrictive, hash-based address mapping scheme to map the virtual addresses to only a specific set of physical addresses and enable faster address translation using compact and efficient translation structures. A flexible segment is similar to the conventional address mapping scheme and provides full virtual-to-physical address mapping flexibility. By mapping data to a restrictive segment, Utopia enables faster address translation with lower translation-induced interference whenever a flexible address mapping is not necessary. Our evaluation using 11 data-intensive workloads shows that Utopia improves performance by 32% on average in single-core workloads over the baseline four-level radix-tree page table design.},
+  montha={November},
+  abbr={arXiv},
+  bibtex_show=true,
+  pdf={https://arxiv.org/pdf/2211.12205.pdf},
+  doi = {10.48550/ARXIV.2211.12205},
+  url = {https://arxiv.org/abs/2211.12205},
+}
+
 @article{singh_aframework_2022,
   title = {A Framework for Designing Efficient Deep Learning-Based Genomic Basecallers},
   copyright = {arXiv.org perpetual, non-exclusive license},
@@ -17,7 +32,7 @@
 }
 
 @inproceedings{mao_genpip_2022,
-  booktitle={2022 55th IEEE/ACM International Symposium on Microarchitecture (MICRO)}, 
+  booktitle={2022 55th IEEE/ACM International Symposium on Microarchitecture}, 
   title={GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping}, 
   address = {Chicago, IL, USA},
   series = {{MICRO} '22},
