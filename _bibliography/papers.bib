@@ -1,5 +1,19 @@
 ---
 ---
+@article{cavlak_targetcall_2022,
+  title = {TargetCall: Eliminating the Wasted Computation in Basecalling via Pre-Basecalling Filtering},
+  journal = {bioRxiv},
+  author = {Cavlak, Meryem Banu and Singh, Gagandeep and Alser, Mohammed and Firtina, Can and Lindegger, Jo{\"e}l and Sadrosadati, Mohammad and Ghiasi, Nika Mansouri and Alkan, Can and Mutlu, Onur},
+  year = {2022},
+  abstract = {Basecalling is an essential step in nanopore sequencing analysis where the raw signals of nanopore sequencers are converted into nucleotide sequences, i.e., reads. State-of-the-art basecallers employ complex deep learning models to achieve high basecalling accuracy. This makes basecalling computationally-inefficient and memory-hungry; bottlenecking the entire genome analysis pipeline. However, for many applications, the majority of reads do no match the reference genome of interest (i.e., target reference) and thus are discarded in later steps in the genomics pipeline, wasting the basecalling computation.To overcome this issue, we propose TargetCall, the first fast and widely-applicable pre-basecalling filter to eliminate the wasted computation in basecalling. TargetCall{\textquoteright}s key idea is to discard reads that will not match the target reference (i.e., off-target reads) prior to basecalling. TargetCall consists of two main components: (1) LightCall, a lightweight neural network basecaller that produces noisy reads; and (2) Similarity Check, which labels each of these noisy reads as on-target or off-target by matching them to the target reference. TargetCall filters out all off-target reads before basecalling; and the highly-accurate but slow basecalling is performed only on the raw signals whose noisy reads are labeled as on-target.Our thorough experimental evaluations using both real and simulated data show that TargetCall 1) improves the end-to-end basecalling performance of the state-of-the-art basecaller by 3.31 {\texttimes} while maintaining high (98.88\%) sensitivity in keeping on-target reads, 2) maintains high accuracy in downstream analysis, 3) precisely filters out up to 94.71\% of off-target reads, and 4) achieves better performance, sensitivity, and generality compared to prior works. We freely open-source TargetCall to aid future research in pre-basecalling filtering at https://github.com/CMU-SAFARI/TargetCall.},
+  montha={December},
+  abbr={bioRxiv},
+  bibtex_show=true,
+  code={https://github.com/CMU-SAFARI/TargetCall},
+  pdf={https://biorxiv.org/content/10.1101/2022.12.09.519749v1.full.pdf},
+  doi = {10.1101/2022.12.09.519749},
+  url = {https://www.biorxiv.org/content/early/2022/12/12/2022.12.09.519749},
+}
 
 @article{kanellopoulos_utopia_2022,
   title = {Utopia: Efficient Address Translation using Hybrid Virtual-to-Physical Address Mapping},
@@ -29,6 +43,23 @@
   pdf={https://arxiv.org/pdf/2211.03079.pdf},
   url = {https://arxiv.org/abs/2211.03079},
   doi = {10.48550/ARXIV.2211.03079},
+}
+
+@article{firtina_blend_2022,
+  title = {{BLEND: A Fast, Memory-Efficient, and Accurate Mechanism to Find Fuzzy Seed Matches in Genome Analysis}}.
+  copyright = {All rights reserved},
+  url = {https://doi.org/10.1101/2022.11.23.517691},
+  journal = {bioRxiv},
+  abstract = {Generating the hash values of short subsequences, called seeds, enables quickly identifying similarities between genomic sequences by matching seeds with a single lookup of their hash values. However, these hash values can be used only for finding exact-matching seeds as the conventional hashing methods assign distinct hash values for different seeds, including highly similar seeds. Finding only exact-matching seeds causes either 1) increasing the use of the costly sequence alignment or 2) limited sensitivity.We introduce BLEND, the first efficient and accurate mechanism that can identify both exact-matching and highly similar seeds with a single lookup of their hash values, called fuzzy seed matches. BLEND 1) utilizes a technique called SimHash, that can generate the same hash value for similar sets, and 2) provides the proper mechanisms for using seeds as sets with the SimHash technique to find fuzzy seed matches efficiently.We show the benefits of BLEND when used in read overlapping and read mapping. For read overlapping, BLEND is faster by 2.4x-83.9x (on average 19.3x), has a lower memory footprint by 0.9x-14.1x (on average 3.8x), and finds higher quality overlaps leading to accurate de novo assemblies than the state-of-the-art tool, minimap2. For read mapping, BLEND is fasterby 0.8x-4.1x (on average 1.7x) than minimap2. Source code is available at https://github.com/CMU-SAFARI/BLEND.Competing Interest StatementThe authors have declared no competing interest.},
+  author = {Firtina, Can and Park, Jisung and Alser, Mohammed and Kim, Jeremie S. and Cali, Damla Senol and Shahroodi, Taha and Ghiasi, Nika Mansouri and Singh, Gagandeep and Kanellopoulos, Konstantinos and Alkan, Can and Mutlu, Onur},
+  year = {2022},
+  montha={November},
+  doi = {10.1101/2022.11.23.517691},
+  selected=true,
+  pdf={https://biorxiv.org/content/10.1101/2022.11.23.517691v1.full.pdf},
+  code={https://github.com/CMU-SAFARI/BLEND},
+  abbr={bioRxiv},
+  bibtex_show=true,
 }
 
 @inproceedings{mao_genpip_2022,
@@ -172,25 +203,6 @@
   slides={https://people.inf.ethz.ch/omutlu/pub/GenStore_asplos22-talk.pdf},
   pptx={https://people.inf.ethz.ch/omutlu/pub/GenStore_asplos22-talk.pptx},
   video={https://www.youtube.com/watch?v=bv7hgXOOMjk},
-  bibtex_show=true,
-}
-
-@article{firtina_blend_2021,
-  title = {{BLEND}: {A} {Fast}, {Memory}-{Efficient}, and {Accurate} {Mechanism} to {Find} {Fuzzy} {Seed} {Matches}},
-  copyright = {All rights reserved},
-  url = {https://doi.org/10.48550/ARXIV.2112.08687},
-  journal = {arXiv},
-  abstract = {Generating the hash values of short subsequences, called seeds, enables quickly identifying similarities between genomic sequences by matching seeds with a single lookup of their hash values. However, these hash values can be used only for finding exact-matching seeds as the conventional hashing methods assign distinct hash values for different seeds, including highly similar seeds. Finding only exact-matching seeds causes either 1) increasing the use of the costly sequence alignment or 2) limited sensitivity.
-  We introduce BLEND, the first efficient and accurate mechanism that can identify both exact-matching and highly similar seeds with a single lookup of their hash values, called fuzzy seeds matches. BLEND 1) utilizes a technique called SimHash, that can generate the same hash value for similar sets, and 2) provides the proper mechanisms for using seeds as sets with the SimHash technique to find fuzzy seed matches efficiently.
-  We show the benefits of BLEND when used in read overlapping and read mapping. For read overlapping, BLEND is faster by 2.6x-63.5x (on average 19.5x), has a lower memory footprint by 0.9x-9.7x (on average 3.6x), and finds higher quality overlaps leading to accurate de novo assemblies than the state-of-the-art tool, minimap2. For read mapping, BLEND is faster by 0.7x-3.7x (on average 1.7x) than minimap2. Source code is available at https://github.com/CMU-SAFARI/BLEND.},
-  author = {Firtina, Can and Park, Jisung and Alser, Mohammed and Kim, Jeremie S. and Senol Cali, Damla and Shahroodi, Taha and Ghiasi, Nika Mansouri and Singh, Gagandeep and Kanellopoulos, Konstantinos and Alkan, Can and Mutlu, Onur},
-  year = {2021},
-  montha={December},
-  doi = {10.48550/ARXIV.2112.08687},
-  selected=true,
-  pdf={https://arxiv.org/pdf/2112.08687.pdf},
-  code={https://github.com/CMU-SAFARI/BLEND},
-  abbr={arXiv},
   bibtex_show=true,
 }
 
