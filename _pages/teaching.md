@@ -4,6 +4,7 @@ permalink: /teaching/
 title: Teaching
 description:
 nav: true
+nav_order: 4
 ---
 
 ___
@@ -11,7 +12,7 @@ ___
 
 ### Teaching
 
-* Digital Design and Computer Architecture (Spring 2019 - Spring 2022)
+* Digital Design and Computer Architecture (Spring 2019 - Spring 2023)
 * Computer Architecture (Fall 2018 - Fall 2022)
 * Seminar in Computer Architecture (Spring/Fall 2018 - Spring/Fall 2022)
 * Genome Sequencing on Mobile Devices (Spring/Fall 2020 - Spring/Fall 2022)
@@ -20,13 +21,9 @@ ___
 
 ### Mentorship
 
-* Patrick Zimmermann (ETH Zurich), Spring 2022.
-* Sebastian Waszkis (ETH Zurich), Spring 2022.
-* Jan Schäppi (ETH Zurich), Spring 2021 - Fall 2021.
-* Simone Brunner (ETH Zurich), Fall 2021.
-* David Schober (ETH Zurich), Fall 2021, jointly with [Giulia Guidi](https://giuliaguidi.github.io).
-* Michael Roth (ETH Zurich), Fall 2020.
+* 10+ B.Sc. and M.Sc. students.
 
 ## Bilkent University
 
 * Automata Theory and Formal Languages (Fall/Spring 2015 - Fall/Spring 2017)
+    * [**<span style="color:red">Outstanding TA Award (2017)</span>**](http://www.cs.bilkent.edu.tr/~csfair/csfair2017/doku.php/awards)
