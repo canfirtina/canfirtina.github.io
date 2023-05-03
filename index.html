@@ -2,39 +2,50 @@
 <html lang="en">
 
   <!-- Head -->
-  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
     <!-- Website verification -->
-    <meta name="google-site-verification" content="" />
+    <meta name="google-site-verification" content="">
+<!-- Avoid warning on Google Chrome
+        Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+        see https://stackoverflow.com/a/75119417
+    -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Can  Firtina</title>
-    <meta name="author" content="Can  Firtina" />
-    <meta name="description" content="" />
+    <meta name="author" content="Can  Firtina">
+    <meta name="description" content="">
 
 
     <!-- Bootstrap & MDB -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
 
     <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://canfirtina.com/">
-    
+
     <!-- Dark Mode -->
     
 
@@ -77,15 +88,27 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/repositories/">Repositories</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
     </header>
+
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- about.html -->
+      
+        <!-- about.html -->
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
@@ -96,14 +119,18 @@
 
         <article>
           <div class="profile float-right">
-<figure>
+
+              <figure>
 
   <picture>
-    <source media="(max-width: 480px)" srcset="/assets/img/prof_pic-480.webp"></source>
-    <source media="(max-width: 800px)" srcset="/assets/img/prof_pic-800.webp"></source>
-    <source media="(max-width: 1400px)" srcset="/assets/img/prof_pic-1400.webp"></source>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/prof_pic-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/prof_pic-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/prof_pic-1400.webp"></source>
+    
+
     <!-- Fallback to the original file -->
-    <img class="img-fluid z-dept-1 rounded" src="/assets/img/prof_pic.jpg" alt="prof_pic.jpg">
+    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -117,11 +144,15 @@
           <div class="social">
             <div class="contact-icons">
             <a href="mailto:%63%61%6E%66%69%72%74%69%6E%61@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=KvB1G5EAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://github.com/canfirtina" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/canfirtina" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/FirtinaC" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://orcid.org/0000-0002-6548-7863" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=KvB1G5EAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.researchgate.net/profile/Can-Firtina/" title="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
+            <a href="https://github.com/canfirtina" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/canfirtina" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/FirtinaC" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://dblp.org/pid/183/8795" title="DBLP" rel="external nofollow noopener" target="_blank"><i class="ai ai-dblp"></i></a>
             
+
             </div>
 
             <div class="contact-note">
@@ -132,43 +163,58 @@
           </div>
 
           <div class="clearfix">
-            <p>Can Firtina is a Ph.D. student in the <a href="https://safari.ethz.ch" target="_blank" rel="noopener noreferrer">SAFARI Research Group</a> at <a href="https://ethz.ch/en.html" target="_blank" rel="noopener noreferrer">ETH Zurich</a>, advised by <a href="https://people.inf.ethz.ch/omutlu/" target="_blank" rel="noopener noreferrer">Prof. Onur Mutlu</a>. He obtained his B.Sc. and M.Sc. degrees in Computer Engineering from <a href="https://w3.bilkent.edu.tr/bilkent/" target="_blank" rel="noopener noreferrer">Bilkent University</a>.</p>
+            <p>Can Firtina is a Ph.D. student in the <a href="https://safari.ethz.ch" rel="external nofollow noopener" target="_blank">SAFARI Research Group</a> at <a href="https://ethz.ch/en.html" rel="external nofollow noopener" target="_blank">ETH Zurich</a>, advised by <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Prof. Onur Mutlu</a>. He obtained his B.Sc. and M.Sc. degrees in Computer Engineering from <a href="https://w3.bilkent.edu.tr/bilkent/" rel="external nofollow noopener" target="_blank">Bilkent University</a>.</p>
 
-<p>His current research interests broadly span bioinformatics and computer architecture topics, including accurately and quickly identifying sequence similarities, hardware/software co-design for accelerating bioinformatics applications and genomic data analysis, correcting sequencing errors, and developing computational tools for gene editing. He is generally interested in developing new algorithms and architectures for bioinformatics applications to enable fast and accurate genome analysis.</p>
+<p>His current research interests broadly span bioinformatics and computer architecture topics, including accurately and quickly identifying sequence similarities, real-time genome analysis, hardware/software co-design for accelerating bioinformatics workloads, correcting sequencing errors, and developing computational tools for genome editing. He is generally interested in developing new algorithms and architectures for bioinformatics applications to enable fast and accurate genome analysis.</p>
 
           </div>
 
+          <!-- News -->
           
+
+          <!-- Latest posts -->
+          
+
           <!-- Selected papers -->
+          <h2><a href="/publications/" style="color: inherit;">Selected publications</a></h2>
           <div class="publications">
-            <h2>Selected publications</h2>
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">bioRxiv</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ISMB/ECCB</abbr></div>
 
         <!-- Entry bib key -->
         <div id="firtina_rawhash_2023" class="col-sm-8">
+        <!-- Title --><div class="title">RawHash: Enabling Fast and Accurate Real-Time Analysis of Raw Nanopore Signals for Large Genomes</div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Author -->
-          <div class="author">
-                  <em>Can Firtina</em>, Nika Mansouri Ghiasi, Joel Lindegger, Gagandeep Singh, Meryem Banu Cavlak, Haiyu Mao, and <a href="https://people.inf.ethz.ch/omutlu/" target="_blank" rel="noopener noreferrer">Onur Mutlu</a>,
-                  
-          </div>
-          <!-- Title --><div class="title"><a href="http://biorxiv.org/content/early/2023/01/23/2023.01.22.525080.abstract" target="_blank" rel="noopener noreferrer">"RawHash: Enabling Fast and Accurate Real-Time Analysis of Raw Nanopore Signals for Large Genomes",</a></div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>bioRxiv</em>, January 2023.
-          </div>
+        <em>Can Firtina</em>, Nika Mansouri Ghiasi, Joel Lindegger, Gagandeep Singh, Meryem Banu Cavlak, Haiyu Mao, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>In Proceedings of the 31st Annual Conference on Intelligent Systems for Molecular Biology (ISMB) and the 22nd European Conference on Computational Biology (ECCB)</em>, Jul 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
-            <a href="https://biorxiv.org/content/10.1101/2023.01.22.525080v1.full.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper (PDF)</a>
-            <a href="https://github.com/CMU-SAFARI/RawHash" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="https://biorxiv.org/content/10.1101/2023.01.22.525080v1.full.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/RawHash" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/bioinformatics/btad272"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1093/bioinformatics/btad272" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
@@ -177,14 +223,127 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_rawhash_2023</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">firtina_rawhash_2023</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 31st Annual Conference on Intelligent Systems for Molecular Biology (ISMB) and the 22nd European Conference on Computational Biology (ECCB)}</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{{RawHash}: {Enabling} {Fast} and {Accurate} {Real}-{Time} {Analysis} of {Raw} {Nanopore} {Signals} for {Large} {Genomes}}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1101/2023.01.22.525080}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{bioRxiv}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1093/bioinformatics/btad272}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Ghiasi, Nika Mansouri and Lindegger, Joel and Singh, Gagandeep and Cavlak, Meryem Banu and Mao, Haiyu and Mutlu, Onur}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="s">{January}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{2023.01.22.525080}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">DAC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="mutlu_accelerating_2023" class="col-sm-8">
+        <!-- Title --><div class="title">Accelerating Genome Analysis via Algorithm-Architecture Co-Design</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>, and <em>Can Firtina</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 60th Design Automation Conference (DAC)</em>, Jul 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/2305.00492" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-altmetric-id="true"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>High-throughput sequencing (HTS) technologies have revolutionized the field of genomics, enabling rapid and cost-effective genome analysis for various applications. However, the increasing volume of genomic data generated by HTS technologies presents significant challenges for computational techniques to effectively analyze genomes. To address these challenges, several algorithm-architecture co-design works have been proposed, targeting different steps of the genome analysis pipeline. These works explore emerging technologies to provide fast, accurate, and low-power genome analysis. 
+  This paper provides a brief review of the recent advancements in accelerating genome analysis, covering the opportunities and challenges associated with the acceleration of the key steps of the genome analysis pipeline. Our analysis highlights the importance of integrating multiple steps of genome analysis using suitable architectures to unlock significant performance improvements and reduce data movement and energy consumption. We conclude by emphasizing the need for novel strategies and techniques to address the growing demands of genomic data generation and analysis.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mutlu_accelerating_2023</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 60th Design Automation Conference (DAC)}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Accelerating Genome Analysis via Algorithm-Architecture Co-Design}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Mutlu, Onur and Firtina, Can}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">APBC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="kim_airlift_2023" class="col-sm-8">
+        <!-- Title --><div class="title">AirLift: A Fast and Comprehensive Technique for Remapping Alignments between Reference Genomes</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie S. Kim</a>, <em>Can Firtina</em>, Meryem Banu Cavlak, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, Nastaran Hajinazar, Mohammed Alser, <a href="http://www.cs.bilkent.edu.tr/~calkan/" rel="external nofollow noopener" target="_blank">Can Alkan</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In The 21st Asia Pacific Bioinformatics Conference (APBC)</em>, Apr 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/1912.08735.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/AirLift" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/slides/2023-04-16_apbc_airlift.pdf" class="btn btn-sm z-depth-0" role="button">Slides (PDF)</a>
+            <a href="/assets/slides/2023-04-16_apbc_airlift.pptx" class="btn btn-sm z-depth-0" role="button">Slides (PPT)</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1101/2021.02.16.431517"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1101/2021.02.16.431517" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>As genome sequencing tools and techniques improve, researchers are able to incrementally assemble more accurate reference genomes, which enable sensitivity in read mapping and downstream analysis such as variant calling. A more sensitive downstream analysis is critical for a better understanding of the genome donor (e.g., health characteristics). Therefore, read sets from sequenced samples should ideally be mapped to the latest available reference genome that represents the most relevant population. Unfortunately, the increasingly large amount of available genomic data makes it prohibitively expensive to fully re-map each read set to its respective reference genome every time the reference is updated. There are several tools that attempt to accelerate the process of updating a read data set from one reference to another (i.e., remapping) by 1) identifying regions that appear similarly between two references and 2) updating the mapping location of reads that map to any of the identified regions in the old reference to the corresponding similar region in the new reference. The main drawback of existing approaches is that if a read maps to a region in the old reference that does not appear with a reasonable degree of similarity in the new reference, the read cannot be remapped. We find that, as a result of this drawback, a significant portion of annotations (i.e., coding regions in a genome) are lost when using state-of-the-art remapping tools. To address this major limitation in existing tools, we propose AirLift, a fast and comprehensive technique for remapping alignments from one genome to another. Compared to the state-of-the-art method for remapping reads (i.e., full mapping), AirLift reduces 1) the number of reads (out of the entire read set) that need to be fully mapped to the new reference by up to 99.99% and 2) the overall execution time to remap read sets between two reference genome versions by 6.7×, 6.6×, and 2.8× for large (human), medium (C. elegans), and small (yeast) reference genomes, respectively. We validate our remapping results with GATK and find that AirLift provides similar accuracy in identifying ground truth SNP and INDEL variants as the baseline of fully mapping a read set.Code Availability AirLift source code and readme describing how to reproduce our results are available at https://github.com/CMU-SAFARI/AirLift.Competing Interest StatementThe authors have declared no competing interest.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">kim_airlift_2023</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{The 21st Asia Pacific Bioinformatics Conference (APBC)}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Changsha, Hunan, China}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{AirLift}: {A} {Fast} and {Comprehensive} {Technique} for {Remapping} {Alignments} between {Reference} {Genomes}}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1101/2021.02.16.431517}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Jeremie S. and Firtina, Can and Cavlak, Meryem Banu and Cali, Damla Senol and Hajinazar, Nastaran and Alser, Mohammed and Alkan, Can and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">apr</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -197,25 +356,37 @@
 
         <!-- Entry bib key -->
         <div id="firtina_blend_2023" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://academic.oup.com/nargab/article/5/1/lqad004/6993940" rel="external nofollow noopener" target="_blank">"BLEND: a fast, memory-efficient and accurate mechanism to find fuzzy seed matches in genome analysis",</a></div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Author -->
-          <div class="author">
-                  <em>Can Firtina</em>, Jisung Park, Mohammed Alser, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Jeremie S Kim</a>, Damla Senol Cali, Taha Shahroodi, Nika Mansouri Ghiasi, Gagandeep Singh, Konstantinos Kanellopoulos, <a href="http://www.cs.bilkent.edu.tr/~calkan/" target="_blank" rel="noopener noreferrer">Can Alkan</a>, and <a href="https://people.inf.ethz.ch/omutlu/" target="_blank" rel="noopener noreferrer">Onur Mutlu</a>,
-                  
-          </div>
-          <!-- Title --><div class="title"><a href="https://doi.org/10.1093/nargab/lqad004" target="_blank" rel="noopener noreferrer">"BLEND: a fast, memory-efficient and accurate mechanism to find fuzzy seed matches in genome analysis",</a></div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>NAR Genomics and Bioinformatics</em>, March 2023.
-          </div>
+        <em>Can Firtina</em>, Jisung Park, Mohammed Alser, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie S Kim</a>, Damla Senol Cali, Taha Shahroodi, Nika Mansouri Ghiasi, Gagandeep Singh, Konstantinos Kanellopoulos, <a href="http://www.cs.bilkent.edu.tr/~calkan/" rel="external nofollow noopener" target="_blank">Can Alkan</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>NAR Genomics and Bioinformatics</em>, Mar 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
-            <a href="https://academic.oup.com/nargab/article-pdf/5/1/lqad004/48797682/lqad004.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper (PDF)</a>
-            <a href="https://github.com/CMU-SAFARI/BLEND" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="https://academic.oup.com/nargab/article-pdf/5/1/lqad004/48797682/lqad004.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/BLEND" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/slides/2023-04-19_recomb_blend.pdf" class="btn btn-sm z-depth-0" role="button">Slides (PDF)</a>
+            <a href="/assets/slides/2023-04-19_recomb_blend.pptx" class="btn btn-sm z-depth-0" role="button">Slides (PPT)</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/nargab/lqad004"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1093/nargab/lqad004" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
@@ -227,14 +398,12 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_blend_2023</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{{BLEND}: a fast, memory-efficient and accurate mechanism to find fuzzy seed matches in genome analysis}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{5}</span><span class="p">,</span>
-  <span class="na">issn</span> <span class="p">=</span> <span class="s">{2631-9268}</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1093/nargab/lqad004}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://academic.oup.com/nargab/article/5/1/lqad004/6993940}</span><span class="p">,</span>
   <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1093/nargab/lqad004}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
-  <span class="na">urldate</span> <span class="p">=</span> <span class="s">{2023-01-23}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{NAR Genomics and Bioinformatics}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Park, Jisung and Alser, Mohammed and Kim, Jeremie S and Cali, Damla Senol and Shahroodi, Taha and Ghiasi, Nika Mansouri and Singh, Gagandeep and Kanellopoulos, Konstantinos and Alkan, Can and Mutlu, Onur}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="s">{March}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">mar</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{lqad004}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -249,25 +418,35 @@
 
         <!-- Entry bib key -->
         <div id="firtina_aphmm_2022" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2207.09765" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Author -->
-          <div class="author">
-                  <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" target="_blank" rel="noopener noreferrer">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" target="_blank" rel="noopener noreferrer">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Jeremie Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joel Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" target="_blank" rel="noopener noreferrer">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" target="_blank" rel="noopener noreferrer">Onur Mutlu</a>,
-                  
-          </div>
-          <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2207.09765" target="_blank" rel="noopener noreferrer">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>arXiv</em>, July 2022.
-          </div>
+        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joel Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>arXiv</em>, Jul 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
-            <a href="https://arxiv.org/pdf/2207.09765.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper (PDF)</a>
-            <a href="https://github.com/CMU-SAFARI/ApHMM-GPU" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="https://arxiv.org/pdf/2207.09765.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/ApHMM-GPU" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2207.09765"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2207.09765" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
@@ -282,56 +461,8 @@
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="s">{July}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2207.09765}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">bioRxiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="kim_airlift_2021" class="col-sm-8">
-        
-          <!-- Author -->
-          <div class="author">
-<a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Jeremie S. Kim</a>, 
-                  <em>Can Firtina</em>, Meryem Banu Cavlak, <a href="https://damlasenolcali.github.io" target="_blank" rel="noopener noreferrer">Damla Senol Cali</a>, Nastaran Hajinazar, Mohammed Alser, <a href="http://www.cs.bilkent.edu.tr/~calkan/" target="_blank" rel="noopener noreferrer">Can Alkan</a>, and <a href="https://people.inf.ethz.ch/omutlu/" target="_blank" rel="noopener noreferrer">Onur Mutlu</a>,
-                  
-          </div>
-          <!-- Title --><div class="title"><a href="http://biorxiv.org/content/early/2021/02/17/2021.02.16.431517.abstract" target="_blank" rel="noopener noreferrer">"AirLift: A Fast and Comprehensive Technique for Remapping Alignments between Reference Genomes",</a></div>
-
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>bioRxiv</em>, July 2021.
-          </div>
-        
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
-            <a href="https://arxiv.org/pdf/1912.08735.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper (PDF)</a>
-            <a href="https://github.com/CMU-SAFARI/AirLift" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>As genome sequencing tools and techniques improve, researchers are able to incrementally assemble more accurate reference genomes, which enable sensitivity in read mapping and downstream analysis such as variant calling. A more sensitive downstream analysis is critical for a better understanding of the genome donor (e.g., health characteristics). Therefore, read sets from sequenced samples should ideally be mapped to the latest available reference genome that represents the most relevant population. Unfortunately, the increasingly large amount of available genomic data makes it prohibitively expensive to fully re-map each read set to its respective reference genome every time the reference is updated. There are several tools that attempt to accelerate the process of updating a read data set from one reference to another (i.e., remapping) by 1) identifying regions that appear similarly between two references and 2) updating the mapping location of reads that map to any of the identified regions in the old reference to the corresponding similar region in the new reference. The main drawback of existing approaches is that if a read maps to a region in the old reference that does not appear with a reasonable degree of similarity in the new reference, the read cannot be remapped. We find that, as a result of this drawback, a significant portion of annotations (i.e., coding regions in a genome) are lost when using state-of-the-art remapping tools. To address this major limitation in existing tools, we propose AirLift, a fast and comprehensive technique for remapping alignments from one genome to another. Compared to the state-of-the-art method for remapping reads (i.e., full mapping), AirLift reduces 1) the number of reads (out of the entire read set) that need to be fully mapped to the new reference by up to 99.99% and 2) the overall execution time to remap read sets between two reference genome versions by 6.7×, 6.6×, and 2.8× for large (human), medium (C. elegans), and small (yeast) reference genomes, respectively. We validate our remapping results with GATK and find that AirLift provides similar accuracy in identifying ground truth SNP and INDEL variants as the baseline of fully mapping a read set.Code Availability AirLift source code and readme describing how to reproduce our results are available at https://github.com/CMU-SAFARI/AirLift.Competing Interest StatementThe authors have declared no competing interest.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">kim_airlift_2021</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{{AirLift}: {A} {Fast} and {Comprehensive} {Technique} for {Remapping} {Alignments} between {Reference} {Genomes}}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1101/2021.02.16.431517}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{bioRxiv}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Jeremie S. and Firtina, Can and Cavlak, Meryem Banu and Cali, Damla Senol and Hajinazar, Nastaran and Alser, Mohammed and Alkan, Can and Mutlu, Onur}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">jan</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{2021.02.16.431517}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2207.09765}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -344,25 +475,35 @@
 
         <!-- Entry bib key -->
         <div id="firtina_apollo_2020" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://academic.oup.com/bioinformatics/article/36/12/3669/5804978" rel="external nofollow noopener" target="_blank">"Apollo: a sequencing-technology-independent, scalable and accurate assembly polishing algorithm",</a></div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Author -->
-          <div class="author">
-                  <em>Can Firtina</em>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Jeremie S. Kim</a>, Mohammed Alser, <a href="https://damlasenolcali.github.io" target="_blank" rel="noopener noreferrer">Damla Senol Cali</a>, A Ercument Cicek, <a href="http://www.cs.bilkent.edu.tr/~calkan/" target="_blank" rel="noopener noreferrer">Can Alkan</a>, and <a href="https://people.inf.ethz.ch/omutlu/" target="_blank" rel="noopener noreferrer">Onur Mutlu</a>,
-                  
-          </div>
-          <!-- Title --><div class="title"><a href="https://doi.org/10.1093/bioinformatics/btaa179" target="_blank" rel="noopener noreferrer">"Apollo: a sequencing-technology-independent, scalable and accurate assembly polishing algorithm",</a></div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>Bioinformatics</em>, June 2020.
-          </div>
+        <em>Can Firtina</em>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie S. Kim</a>, Mohammed Alser, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, A Ercument Cicek, <a href="http://www.cs.bilkent.edu.tr/~calkan/" rel="external nofollow noopener" target="_blank">Can Alkan</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>Bioinformatics</em>, Jun 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
-            <a href="/assets/pdf/firtina_2020_apollo.pdf" class="btn btn-sm z-depth-0" role="button">Paper (PDF)</a>
-            <a href="https://github.com/CMU-SAFARI/Apollo" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="https://academic.oup.com/bioinformatics/article-pdf/36/12/3669/33437318/btaa179.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/Apollo" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/bioinformatics/btaa179"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1093/bioinformatics/btaa179" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
@@ -375,12 +516,12 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Apollo: a sequencing-technology-independent, scalable and accurate assembly polishing algorithm}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{36}</span><span class="p">,</span>
   <span class="na">issn</span> <span class="p">=</span> <span class="s">{1367-4803}</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1093/bioinformatics/btaa179}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://academic.oup.com/bioinformatics/article/36/12/3669/5804978}</span><span class="p">,</span>
   <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1093/bioinformatics/btaa179}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{12}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Bioinformatics}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Kim, Jeremie S. and Alser, Mohammed and Senol Cali, Damla and Cicek, A Ercument and Alkan, Can and Mutlu, Onur}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="s">{June}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jun</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{3669--3679}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -390,26 +531,25 @@
 </li>
 </ol>
           </div>
-
         </article>
-
 </div>
 
+      
     </div>
 
-    <!-- Footer -->    
+    <!-- Footer -->
+    <!--    
     <footer class="fixed-bottom">
       <div class="container mt-0">
       </div>
-    </footer>
+    </footer> -->
 
     <!-- JavaScripts -->
     <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Bootsrap & MDB scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
     <!-- Masonry & imagesLoaded -->
@@ -418,9 +558,20 @@
   <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
     
   <!-- Medium Zoom JS -->
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
-  <script src="/assets/js/common.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
 
     <!-- MathJax -->
   <script type="text/javascript">
@@ -437,10 +588,88 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){ window.dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', '');
   </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
   </body>
 </html>
-
