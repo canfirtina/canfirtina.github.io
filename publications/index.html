@@ -124,6 +124,120 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ACM TACO</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="firtina_aphmm_2023" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2207.09765" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joel Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>ACM TACO</em>, Oct 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/2207.09765.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/ApHMM-GPU" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2207.09765"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2207.09765" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
+  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_aphmm_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM TACO}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2207.09765}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="lindegger_rawalign_2023" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://doi.org/10.48550/arXiv.2310.05037" rel="external nofollow noopener" target="_blank">"RawAlign: Accurate, Fast, and Scalable Raw Nanopore Signal Mapping via Combining Seeding and Alignment",</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Joël Lindegger, <em>Can Firtina</em>, Nika Mansouri Ghiasi, Mohammad Sadrosadati, Mohammed Alser, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, Oct 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/2310.05037.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+            <a href="https://github.com/CMU-SAFARI/RawAlign" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/arXiv.2310.05037"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.48550/arXiv.2310.05037" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Nanopore-based sequencers generate a series of raw electrical signal measurements that represent the contents of a biological sequence molecule passing through the sequencer’s nanopore. If the raw signal is analyzed in real-time, an irrelevant molecule can be ejected from the nanopore before it is completely sequenced, reducing sequencing time. To meet the low-latency and high-throughput requirements of the real-time analysis, a number of recent works propose the direct analysis of raw nanopore signals instead of traditional basecalling-based analysis approaches. We observe that while existing proposals for raw signal read mapping typically do well in all metrics for small reference databases (e.g., viral genomes), they all fail to scale to large reference databases (e.g., the human genome) in some aspect. Our goal is to analyze raw nanopore signals with high accuracy, high throughput, low latency, low memory usage, and needing few bases to be sequenced for a wide range of reference database sizes. To this end, we propose RawAlign, the first Seed-Filter-Align mapper for raw nanopore signals. Our evaluation shows that RawAlign is the only tool that can map raw nanopore signals to large reference databases ≥3117Mbp with high accuracy. Our evaluation shows that RawAlign generalizes well to a wide range of reference database sizes. In particular, RawAlign has a similar throughput to the overall prior state-of-the-art RawHash (between 0.80x-1.08x) while improving accuracy on all datasets (between 1.02x-1.64x F-1 score). RawAlign provides a 2.83x (2.06x) speedup over Uncalled (Sigmap) on average (geo. mean) while improving accuracy by 1.35x (1.34x) in terms of F-1 score on average (geo. mean). Availability: https://github.com/cmu-safari/RawAlign.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">lindegger_rawalign_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{RawAlign}: {Accurate, Fast, and Scalable Raw Nanopore Signal Mapping via Combining Seeding and Alignment}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Lindegger, Joël and Firtina, Can and Ghiasi, Nika Mansouri and Sadrosadati, Mohammad and Alser, Mohammed and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/arXiv.2310.05037}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.48550/arXiv.2310.05037}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">MICRO</abbr></div>
 
         <!-- Entry bib key -->
@@ -318,6 +432,7 @@
             <a href="https://github.com/CMU-SAFARI/RawHash" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
             <a href="https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023-ismbeccb.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides (PDF)</a>
             <a href="https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023-ismbeccb.pptx" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides (PPTX)</a>
+            <a href="https://youtu.be/ti0M6TvRkTs" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
           </div>
           
           <div class="badges">
@@ -697,63 +812,6 @@
   <span class="na">url</span> <span class="p">=</span> <span class="s">{https://ieeexplore.ieee.org/document/9923847/}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{710-726}</span><span class="p">,</span>
   <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/MICRO56248.2022.00056}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="firtina_aphmm_2022" class="col-sm-8">
-        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2207.09765" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joel Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv</em>, Jul 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
-            <a href="https://arxiv.org/pdf/2207.09765.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
-            <a href="https://github.com/CMU-SAFARI/ApHMM-GPU" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2207.09765"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2207.09765" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
-  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_aphmm_2022</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2207.09765}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
