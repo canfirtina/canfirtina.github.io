@@ -1,6 +1,42 @@
 ---
 ---
 
+@article{firtina_aphmm_2023,
+  title = {ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis},
+  journal = {ACM TACO},
+  author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur},
+  year = {2023},
+  abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
+  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.},
+  selected=true,
+  month = {oct},
+  abbr={ACM TACO},
+  bibtex_show=true,
+  pdf={https://arxiv.org/pdf/2207.09765.pdf},
+  code={https://github.com/CMU-SAFARI/ApHMM-GPU},
+  url = {https://arxiv.org/abs/2207.09765},
+  doi = {10.48550/ARXIV.2207.09765},
+  altmetric={true},
+  dimensions={true},
+}
+
+@article{lindegger_rawalign_2023,
+	title = {{RawAlign}: {Accurate, Fast, and Scalable Raw Nanopore Signal Mapping via Combining Seeding and Alignment}},
+	author={Joël Lindegger and Can Firtina and Nika Mansouri Ghiasi and Mohammad Sadrosadati and Mohammed Alser and Onur Mutlu},
+	abstract = {Nanopore-based sequencers generate a series of raw electrical signal measurements that represent the contents of a biological sequence molecule passing through the sequencer's nanopore. If the raw signal is analyzed in real-time, an irrelevant molecule can be ejected from the nanopore before it is completely sequenced, reducing sequencing time. To meet the low-latency and high-throughput requirements of the real-time analysis, a number of recent works propose the direct analysis of raw nanopore signals instead of traditional basecalling-based analysis approaches. We observe that while existing proposals for raw signal read mapping typically do well in all metrics for small reference databases (e.g., viral genomes), they all fail to scale to large reference databases (e.g., the human genome) in some aspect. Our goal is to analyze raw nanopore signals with high accuracy, high throughput, low latency, low memory usage, and needing few bases to be sequenced for a wide range of reference database sizes. To this end, we propose RawAlign, the first Seed-Filter-Align mapper for raw nanopore signals. Our evaluation shows that RawAlign is the only tool that can map raw nanopore signals to large reference databases ≥3117Mbp with high accuracy. Our evaluation shows that RawAlign generalizes well to a wide range of reference database sizes. In particular, RawAlign has a similar throughput to the overall prior state-of-the-art RawHash (between 0.80x-1.08x) while improving accuracy on all datasets (between 1.02x-1.64x F-1 score). RawAlign provides a 2.83x (2.06x) speedup over Uncalled (Sigmap) on average (geo. mean) while improving accuracy by 1.35x (1.34x) in terms of F-1 score on average (geo. mean). Availability: https://github.com/cmu-safari/RawAlign.},
+	journal = {arXiv},
+	year = {2023},
+	month = {oct},
+	doi = {10.48550/arXiv.2310.05037},
+	url = {https://doi.org/10.48550/arXiv.2310.05037},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2310.05037.pdf},
+  code={https://github.com/CMU-SAFARI/RawAlign},
+  bibtex_show=true,
+  altmetric={true},
+  dimensions={true},
+}
+
 @inproceedings{shahroodi_swordfish_2023,
   title = {Swordfish: A Framework for Evaluating DNN-based Basecalling using Computation-In-Memory with Non-Ideal Memristors},
   booktitle={Proceedings of the 56th IEEE/ACM International Symposium on Microarchitecture (MICRO)}, 
@@ -37,7 +73,6 @@
 	journal = {arXiv},
 	year = {2023},
 	month = {sep},
-	year = {2023},
 	doi = {10.48550/arXiv.2309.05771},
 	url = {https://doi.org/10.48550/arXiv.2309.05771},
   abbr={arXiv},
@@ -60,7 +95,6 @@
 	pages = {i297-i307},
 	year = {2023},
 	month = {jun},
-	year = {2023},
 	doi = {10.1093/bioinformatics/btad272},
 	issn = {1367-4811},
 	url = {https://doi.org/10.1093/bioinformatics/btad272},
@@ -70,6 +104,7 @@
   code={https://github.com/CMU-SAFARI/RawHash},
   slides={https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023-ismbeccb.pdf},
   pptx={https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023-ismbeccb.pptx},
+  video={https://youtu.be/ti0M6TvRkTs},
   bibtex_show=true,
   altmetric={true},
   dimensions={true},
@@ -186,25 +221,6 @@
   dimensions={true},
   slides={https://people.inf.ethz.ch/omutlu/pub/GenPIP_micro22-talk.pdf},
   pptx={https://people.inf.ethz.ch/omutlu/pub/GenPIP_micro22-talk.pptx},
-}
-
-@article{firtina_aphmm_2022,
-  title = {ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis},
-  journal = {arXiv},
-  author = {Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur},
-  year = {2022},
-  abstract = {Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
-  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.},
-  selected=true,
-  month = {jul},
-  abbr={arXiv},
-  bibtex_show=true,
-  pdf={https://arxiv.org/pdf/2207.09765.pdf},
-  code={https://github.com/CMU-SAFARI/ApHMM-GPU},
-  url = {https://arxiv.org/abs/2207.09765},
-  doi = {10.48550/ARXIV.2207.09765},
-  altmetric={true},
-  dimensions={true},
 }
 
 @article{kim_fastremap_2022,
