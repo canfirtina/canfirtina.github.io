@@ -128,19 +128,19 @@
 
         <!-- Entry bib key -->
         <div id="firtina_aphmm_2023" class="col-sm-8">
-        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2207.09765" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
+        <!-- Title --><div class="title"><a href="https://dl.acm.org/doi/10.1145/3632950" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joel Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie S. Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joël Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>ACM TACO</em>, Oct 2023
+          <em>ACM Trans. Archit. Code Optim.</em>, Dec 2023
         </div>
         <div class="periodical">
           
@@ -155,24 +155,192 @@
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2207.09765"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2207.09765" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3632950"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3632950" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
-  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.</p>
+            <p>Profile hidden Markov models (pHMMs) are widely employed in various bioinformatics applications to identify similarities between biological sequences, such as DNA or protein sequences. In pHMMs, sequences are represented as graph structures, where states and edges capture modifications (i.e., insertions, deletions, and substitutions) by assigning probabilities to them. These probabilities are subsequently used to compute the similarity score between a sequence and a pHMM graph. The Baum-Welch algorithm, a prevalent and highly accurate method, utilizes these probabilities to optimize and compute similarity scores. Accurate computation of these probabilities is essential for the correct identification of sequence similarities. However, the Baum-Welch algorithm is computationally intensive, and existing solutions offer either software-only or hardware-only approaches with fixed pHMM designs. When we analyze state-of-the-art works, we identify an urgent need for a flexible, high-performance, and energy-efficient hardware-software co-design to address the major inefficiencies in the Baum-Welch algorithm for pHMMs.
+  We introduce ApHMM, the first flexible acceleration framework designed to significantly reduce both computational and energy overheads associated with the Baum-Welch algorithm for pHMMs. ApHMM employs hardware-software co-design to tackle the major inefficiencies in the Baum-Welch algorithm by 1) designing flexible hardware to accommodate various pHMM designs, 2) exploiting predictable data dependency patterns through on-chip memory with memoization techniques, 3) rapidly filtering out unnecessary computations using a hardware-based filter, and 4) minimizing redundant computations.
+  ApHMM achieves substantial speedups of 15.55x - 260.03x, 1.83x - 5.34x, and 27.97x when compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms state-of-the-art CPU implementations in three key bioinformatics applications: 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x - 59.94x, 1.03x - 1.75x, and 1.03x - 1.95x, respectively, while improving their energy efficiency by 64.24x - 115.46x, 1.75x, 1.96x.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_aphmm_2023</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM TACO}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Trans. Archit. Code Optim.}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Jo\"{e}l and Alser, Mohammed and Luna, Juan G\'{o}mez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{1544-3566}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://dl.acm.org/doi/10.1145/3632950}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3632950}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="gollwitzer_metafast_2023" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2311.02029" rel="external nofollow noopener" target="_blank">"MetaFast: Enabling Fast Metagenomic Classification via Seed Counting and Edit Distance Approximation",</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Arvid E. Gollwitzer, Mohammed Alser, Joel Bergtholdt, Joel Lindegger, Maximilian-David Rumpf, <em>Can Firtina</em>, Serghei Mangul, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, Nov 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/2311.02029.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2311.02029"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2311.02029" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Metagenomics, the study of genome sequences of diverse organisms cohabiting in a shared environment, has experienced significant advancements across various medical and biological fields. Metagenomic analysis is crucial, for instance, in clinical applications such as infectious disease screening and the diagnosis and early detection of diseases such as cancer. A key task in metagenomics is to determine the species present in a sample and their relative abundances. Currently, the field is dominated by either alignment-based tools, which offer high accuracy but are computationally expensive, or alignment-free tools, which are fast but lack the needed accuracy for many applications. In response to this dichotomy, we introduce MetaFast, a tool based on heuristics, to achieve a fundamental improvement in accuracy-runtime tradeoff over existing methods. MetaFast delivers accuracy comparable to the alignment-based and highly accurate tool Metalign but with significantly enhanced efficiency. In MetaFast, we accelerate memory-frugal reference database indexing and filtering. We further employ heuristics to accelerate read mapping. Our evaluation demonstrates that MetaFast achieves a 4x speedup over Metalign without compromising accuracy. MetaFast is publicly available at https://github.com/CMU-SAFARI/MetaFast</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">gollwitzer_metafast_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{MetaFast: Enabling Fast Metagenomic Classification via Seed Counting and Edit Distance Approximation}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Gollwitzer, Arvid E. and Alser, Mohammed and Bergtholdt, Joel and Lindegger, Joel and Rumpf, Maximilian-David and Firtina, Can and Mangul, Serghei and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2311.02029}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="mansouri_ghiasi_metastore_2023" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2311.12527" rel="external nofollow noopener" target="_blank">"MetaStore: High-Performance Metagenomic Analysis via In-Storage Computing",</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, Arvid Gollwitzer, <em>Can Firtina</em>, Julien Eudine, Haiyu Ma, Joël Lindegger, Meryem Banu Cavlak, Mohammed Alser, Jisung Park, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, Nov 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/2311.12527.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2311.12527"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2311.12527" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Metagenomics has led to significant advancements in many fields. Metagenomic analysis commonly involves the key tasks of determining the species present in a sample and their relative abundances. These tasks require searching large metagenomic databases containing information on different species’ genomes. Metagenomic analysis suffers from significant data movement overhead due to moving large amounts of low-reuse data from the storage system to the rest of the system. In-storage processing can be a fundamental solution for reducing data movement overhead. However, designing an in-storage processing system for metagenomics is challenging because none of the existing approaches can be directly implemented in storage effectively due to the hardware limitations of modern SSDs. We propose MetaStore, the first in-storage processing system designed to significantly reduce the data movement overhead of end-to-end metagenomic analysis. MetaStore is enabled by our lightweight and cooperative design that effectively leverages and orchestrates processing inside and outside the storage system. Through our detailed analysis of the end-to-end metagenomic analysis pipeline and careful hardware/software co-design, we address in-storage processing challenges for metagenomics via specialized and efficient 1) task partitioning, 2) data/computation flow coordination, 3) storage technology-aware algorithmic optimizations, 4) light-weight in-storage accelerators, and 5) data mapping. Our evaluation shows that MetaStore outperforms the state-of-the-art performance- and accuracy-optimized software metagenomic tools by 2.7-37.2x and 6.9-100.2x, respectively, while matching the accuracy of the accuracy-optimized tool. MetaStore achieves 1.5-5.1x speedup compared to the state-of-the-art metagenomic hardware-accelerated tool, while achieving significantly higher accuracy.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mansouri_ghiasi_metastore_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{MetaStore: High-Performance Metagenomic Analysis via In-Storage Computing}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ghiasi, Nika Mansouri and Sadrosadati, Mohammad and Mustafa, Harun and Gollwitzer, Arvid and Firtina, Can and Eudine, Julien and Ma, Haiyu and Lindegger, Joël and Cavlak, Meryem Banu and Alser, Mohammed and Park, Jisung and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2311.12527}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="rumpf_sequencelab_2023" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2310.16908" rel="external nofollow noopener" target="_blank">"SequenceLab: A Comprehensive Benchmark of Computational Methods for Comparing Genomic Sequences",</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Maximilian-David Rumpf, Mohammed Alser, Arvid E. Gollwitzer, Joel Lindegger, Nour Almadhoun, <em>Can Firtina</em>, Serghei Mangul, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, Oct 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">BIB</a>
+            <a href="https://arxiv.org/pdf/2310.16908.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper (PDF)</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2310.16908"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2310.16908" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Computational complexity is a key limitation of genomic analyses. Thus, over the last 30 years, researchers have proposed numerous fast heuristic methods that provide computational relief. Comparing genomic sequences is one of the most fundamental computational steps in most genomic analyses. Due to its high computational complexity, new, more optimized exact and heuristic algorithms are still being developed. We find that these methods are highly sensitive to the underlying data, its quality, and various hyperparameters. Despite their wide use, no in-depth analysis has been performed, potentially falsely discarding genetic sequences from further analysis and unnecessarily inflating computational costs. We provide the first analysis and benchmark of this heterogeneity. We deliver an actionable overview of the 11 most widely used state-of-the-art methods for comparing genomic sequences. We also inform readers about their pros and cons using thorough experimental evaluation and different real datasets from all major manufacturers (i.e., Illumina, ONT, and PacBio). SequenceLab is publicly available at https://github.com/CMU-SAFARI/SequenceLab</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">rumpf_sequencelab_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{SequenceLab: A Comprehensive Benchmark of Computational Methods for Comparing Genomic Sequences}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Rumpf, Maximilian-David and Alser, Mohammed and Gollwitzer, Arvid E. and Lindegger, Joel and Almadhoun, Nour and Firtina, Can and Mangul, Serghei and Mutlu, Onur}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2207.09765}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2310.16908}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -242,18 +410,18 @@
 
         <!-- Entry bib key -->
         <div id="shahroodi_swordfish_2023" class="col-sm-8">
-        <!-- Title --><div class="title">Swordfish: A Framework for Evaluating DNN-based Basecalling using Computation-In-Memory with Non-Ideal Memristors</div>
+        <!-- Title --><div class="title"><a href="https://doi.org/10.1145/3613424.3614252" rel="external nofollow noopener" target="_blank">"Swordfish: A Framework for Evaluating Deep Neural Network-Based Basecalling Using Computation-In-Memory with Non-Ideal Memristors",</a></div>
         <!-- Author -->
         <div class="author">
         
 
-        Taha Shahroodi, Mahdi Zahedi, Gagandeep Singh, Haiyu Mao, Joel Lindegger, <em>Can Firtina</em>, Stephan Wong, <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>, and Said Hamdioui</div>
+        Taha Shahroodi, Gagandeep Singh, Mahdi Zahedi, Haiyu Mao, Joel Lindegger, <em>Can Firtina</em>, Stephan Wong, <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>, and Said Hamdioui</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In Proceedings of the 56th IEEE/ACM International Symposium on Microarchitecture (MICRO)</em>, Oct 2023
+          <em>In Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)</em>, Oct 2023
         </div>
         <div class="periodical">
           
@@ -266,23 +434,26 @@
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-altmetric-id="true"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3613424.3614252"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3613424.3614252" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Modern-day basecalling, an essential step in many genomic studies, relies on large Deep Neural Networks (DNNs) to achieve high accuracy. Unfortunately, these DNNs are computationally slow and inefficient, leading to considerable delays and resource constraints in the sequencing process. A Computation-In-Memory (CIM) architecture using memristors can significantly accelerate the performance of DNNs. However, inherent device non-idealities and architectural limitations of such design can greatly degrade the accuracy, which is a strict requirement for basecalling. Therefore, to facilitate the adoption of memristor-based CIM designs for basecalling, we need to (1) conduct a comprehensive analysis of these solutions and (2) develop effective strategies for mitigating the possible adverse effects of inherent device non-idealities and architectural limitations.
-  This paper proposes Swordfish, a novel hardware/software co-design framework that can effectively address the two aforementioned challenges. In particular, Swordfish incorporates seven circuit and device restrictions/non-idealities from characterized real memristor-based chips. Swordfish leverages hardware/software co-design solutions from different mitigation techniques to mitigate accuracy loss. To demonstrate the effectiveness of Swordfish, we take Bonito, the state-of-the-art (i.e., accurate and fast), open-sourced basecaller as a case study. Our experimental results show that the CIM architecture can realistically accelerate Bonito by an average of 25.7x, with a minimum accuracy loss of 6.01%.</p>
+            <p>Basecalling, an essential step in many genome analysis studies, relies on large Deep Neural Network s (DNN s) to achieve high accuracy. Unfortunately, these DNN s are computationally slow and inefficient, leading to considerable delays and resource constraints in the sequence analysis process. A Computation-In-Memory (CIM) architecture using memristors can significantly accelerate the performance of DNN s. However, inherent device non-idealities and architectural limitations of such designs can greatly degrade the basecalling accuracy, which is critical for accurate genome analysis. To facilitate the adoption of memristor-based CIM designs for basecalling, it is important to (1) conduct a comprehensive analysis of potential CIM architectures and (2) develop effective strategies for mitigating the possible adverse effects of inherent device non-idealities and architectural limitations.  This paper proposes Swordfish, a novel hardware/software co-design framework that can effectively address the two aforementioned issues. Swordfish incorporates seven circuit and device restrictions or non-idealities from characterized real memristor-based chips. Swordfish leverages various hardware/software co-design solutions to mitigate the basecalling accuracy loss due to such non-idealities. To demonstrate the effectiveness of Swordfish, we take Bonito, the state-of-the-art (i.e., accurate and fast), open-source basecaller as a case study. Our experimental results using Swordfish show that a CIM architecture can realistically accelerate Bonito for a wide range of real datasets by an average of 25.7 \texttimes, with an accuracy loss of 6.01%.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">shahroodi_swordfish_2023</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Swordfish: A Framework for Evaluating DNN-based Basecalling using Computation-In-Memory with Non-Ideal Memristors}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 56th IEEE/ACM International Symposium on Microarchitecture (MICRO)}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Shahroodi, Taha and Zahedi, Mahdi and Singh, Gagandeep and Mao, Haiyu and Lindegger, Joel and Firtina, Can and Wong, Stephan and Mutlu, Onur and Hamdioui, Said}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Swordfish: A Framework for Evaluating Deep Neural Network-Based Basecalling Using Computation-In-Memory with Non-Ideal Memristors}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Shahroodi, Taha and Singh, Gagandeep and Zahedi, Mahdi and Mao, Haiyu and Lindegger, Joel and Firtina, Can and Wong, Stephan and Mutlu, Onur and Hamdioui, Said}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1437–1452}</span><span class="p">,</span>
+  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{9798400703294}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1145/3613424.3614252}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3613424.3614252}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -295,19 +466,19 @@
 
         <!-- Entry bib key -->
         <div id="kanellopoulos_utopia_2023" class="col-sm-8">
-        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2211.12205" rel="external nofollow noopener" target="_blank">"Utopia: Efficient Address Translation using Hybrid Virtual-to-Physical Address Mapping",</a></div>
+        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2211.12205" rel="external nofollow noopener" target="_blank">"Utopia: Fast and Efficient Address Translation via Hybrid Restrictive &amp; Flexible Virtual-to-Physical Address Mappings",</a></div>
         <!-- Author -->
         <div class="author">
         
 
-        Konstantinos Kanellopoulos, Rahul Bera, Kosta Stojiljkovic, Nisa Bostanci, <em>Can Firtina</em>, Rachata Ausavarungnirun, Rakesh Kumar, Nastaran Hajinazar, Mohammad Sadrosadati, Nandita Vijaykumar, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+        Konstantinos Kanellopoulos, Rahul Bera, Kosta Stojiljkovic, F. Nisa Bostanci, <em>Can Firtina</em>, Rachata Ausavarungnirun, Rakesh Kumar, Nastaran Hajinazar, Mohammad Sadrosadati, Nandita Vijaykumar, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In Proceedings of the 56th IEEE/ACM International Symposium on Microarchitecture (MICRO)</em>, Oct 2023
+          <em>In Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)</em>, Oct 2023
         </div>
         <div class="periodical">
           
@@ -321,22 +492,25 @@
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-altmetric-id="true"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3613424.3623789"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3613424.3623789" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>The conventional virtual-to-physical address mapping scheme enables a virtual address to flexibly map to any physical ad- dress. This flexibility necessitates large data structures to store virtual-to-physical mappings, which incurs significantly high address translation latency and translation-induced inter- ference in the memory hierarchy (e.g., loss of cache capacity to store address translation metadata, increased DRAM row buffer conflicts), especially in data-intensive workloads. Re- stricting the address mapping so that a virtual address can map to only a specific set of physical addresses can signifi- cantly reduce the overheads associated with the conventional address translation by making use of compact and more effi- cient translation structures. However, restricting the address mapping flexibility across the entire main memory (i.e., a virtual address can only map to a specific set of physical addresses) severely limits data sharing across different pro- cesses and increases memory under-utilization. In this work, we propose Utopia, a new hybrid virtual-to- physical address mapping scheme that allows both flexible and restrictive hash-based address mapping schemes to co- exist in a system. The key idea of Utopia is to manage physi- cal memory using two types of physical memory segments: restrictive segments and flexible segments. A restrictive seg- ment uses a restrictive, hash-based address mapping scheme to map the virtual addresses to only a specific set of physical addresses and enable faster address translation using com- pact translation structures. A flexible segment is similar to the conventional address mapping scheme and provides full virtual-to-physical address mapping flexibility. By mapping data to a restrictive segment, Utopia enables faster address translation with lower translation-induced interference when- ever flexible address mapping is not necessary. At the same time, Utopia retains the ability to support conventional virtual memory features that rely on flexible address mapping. Our extensive evaluation of Utopia using a wide range of 11 data-intensive workloads shows that Utopia improves per- formance by 24% on average in single-core workloads over the baseline four-level radix-tree page table design, whereas the best prior state-of-the-art address translation scheme im- proves performance by 13%. Utopia provides 95% of the performance benefits of an ideal address translation scheme where every translation request hits in the first-level trans- lation look-aside buffer. All of Utopia’s benefits come at a modest cost of 0.74% area overhead and 0.62% power over- head compared to a modern CPU.</p>
+            <p>Conventional virtual memory (VM) frameworks enable a virtual address to flexibly map to any physical address. This flexibility necessitates large data structures to store virtual-to-physical mappings, which leads to high address translation latency and large translation-induced interference in the memory hierarchy, especially in data-intensive workloads. On the other hand, restricting the address mapping so that a virtual address can only map to a specific set of physical addresses can significantly reduce address translation overheads by making use of compact and efficient translation structures. However, restricting the address mapping flexibility across the entire main memory severely limits data sharing across different processes and increases data accesses to the swap space of the storage device even in the presence of free memory. We propose Utopia, a new hybrid virtual-to-physical address mapping scheme that allows both flexible and restrictive hash-based address mapping schemes to harmoniously co-exist in the system. The key idea of Utopia is to manage physical memory using two types of physical memory segments: restrictive segments and flexible segments. A restrictive segment uses a restrictive, hash-based address mapping scheme that maps virtual addresses to only a specific set of physical addresses and enables faster address translation using compact translation structures. A flexible segment employs the conventional fully-flexible address mapping scheme. By mapping data to a restrictive segment, Utopia enables faster address translation with lower translation-induced interference. At the same time, Utopia retains the ability to use the flexible address mapping to (i) support conventional VM features such as data sharing and (ii) avoid storing data in the swap space of the storage device when program data does not fit inside a restrictive segment. Our evaluation using 11 diverse data-intensive workloads shows that Utopia improves performance by 24% in a single-core system over the baseline conventional four-level radix-tree page table design, whereas the best prior state-of-the-art contiguity-aware translation scheme improves performance by 13%. Utopia provides 95% of the performance benefits of an ideal address translation scheme where every translation request hits in the first-level TLB. All of Utopia’s benefits come at a modest cost of 0.64% area overhead and 0.72% power overhead compared to a modern high-end CPU. The source code of Utopia is freely available at https://github.com/CMU-SAFARI/Utopia.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">kanellopoulos_utopia_2023</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Utopia: Efficient Address Translation using Hybrid Virtual-to-Physical Address Mapping}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 56th IEEE/ACM International Symposium on Microarchitecture (MICRO)}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kanellopoulos, Konstantinos and Bera, Rahul and Stojiljkovic, Kosta and Bostanci, Nisa and Firtina, Can and Ausavarungnirun, Rachata and Kumar, Rakesh and Hajinazar, Nastaran and Sadrosadati, Mohammad and Vijaykumar, Nandita and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Utopia: Fast and Efficient Address Translation via Hybrid Restrictive \&amp; Flexible Virtual-to-Physical Address Mappings}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 56th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kanellopoulos, Konstantinos and Bera, Rahul and Stojiljkovic, Kosta and Bostanci, F. Nisa and Firtina, Can and Ausavarungnirun, Rachata and Kumar, Rakesh and Hajinazar, Nastaran and Sadrosadati, Mohammad and Vijaykumar, Nandita and Mutlu, Onur}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1196–1212}</span><span class="p">,</span>
+  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{9798400703294}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3613424.3623789}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -471,7 +645,7 @@
 
         <!-- Entry bib key -->
         <div id="mutlu_accelerating_2023" class="col-sm-8">
-        <!-- Title --><div class="title">Accelerating Genome Analysis via Algorithm-Architecture Co-Design</div>
+        <!-- Title --><div class="title"><a href="https://ieeexplore.ieee.org/document/10247887" rel="external nofollow noopener" target="_blank">"Accelerating Genome Analysis via Algorithm-Architecture Co-Design",</a></div>
         <!-- Author -->
         <div class="author">
         
@@ -483,7 +657,7 @@
         
         
         <div class="periodical">
-          <em>In Proceedings of the 60th Design Automation Conference (DAC)</em>, Jul 2023
+          <em>In 2023 60th ACM/IEEE Design Automation Conference (DAC)</em>, Jul 2023
         </div>
         <div class="periodical">
           
@@ -497,8 +671,8 @@
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-altmetric-id="true"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/DAC56929.2023.10247887"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/DAC56929.2023.10247887" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
@@ -509,11 +683,13 @@
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mutlu_accelerating_2023</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 60th Design Automation Conference (DAC)}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2023 60th ACM/IEEE Design Automation Conference (DAC)}</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Accelerating Genome Analysis via Algorithm-Architecture Co-Design}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mutlu, Onur and Firtina, Can}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/DAC56929.2023.10247887}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://ieeexplore.ieee.org/document/10247887}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>

@@ -186,19 +186,19 @@
 
         <!-- Entry bib key -->
         <div id="firtina_aphmm_2023" class="col-sm-8">
-        <!-- Title --><div class="title"><a href="https://arxiv.org/abs/2207.09765" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
+        <!-- Title --><div class="title"><a href="https://dl.acm.org/doi/10.1145/3632950" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joel Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
+        <em>Can Firtina</em>, Kamlesh Pillai, <a href="https://in.linkedin.com/in/gurpreet-singh-kalsi-bb75302" rel="external nofollow noopener" target="_blank">Gurpreet S. Kalsi</a>, Bharathwaj Suresh, <a href="https://damlasenolcali.github.io" rel="external nofollow noopener" target="_blank">Damla Senol Cali</a>, <a href="https://scholar.google.com/citations?user=-pOH1s4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Jeremie S. Kim</a>, Taha Shahroodi, Meryem Banu Cavlak, Joël Lindegger, Mohammed Alser, Juan Gómez Luna, <a href="https://in.linkedin.com/in/sreenivas-subramoney-i-am-hiring-6564521" rel="external nofollow noopener" target="_blank">Sreenivas Subramoney</a>, and <a href="https://people.inf.ethz.ch/omutlu/" rel="external nofollow noopener" target="_blank">Onur Mutlu</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>ACM TACO</em>, Oct 2023
+          <em>ACM Trans. Archit. Code Optim.</em>, Dec 2023
         </div>
         <div class="periodical">
           
@@ -213,24 +213,27 @@
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.48550/ARXIV.2207.09765"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.48550/ARXIV.2207.09765" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3632950"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3632950" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Profile hidden Markov models (pHMMs) are widely used in many bioinformatics applications to accurately identify similarities between biological sequences (e.g., DNA or protein sequences). PHMMs use a commonly-adopted and highly-accurate method, called the Baum-Welch algorithm, to calculate these similarities. However, the Baum-Welch algorithm is computationally expensive, and existing works provide either software- or hardware-only solutions for a fixed pHMM design. When we analyze the state-of-the-art works, we find that there is a pressing need for a flexible, high-performant, and energy-efficient hardware-software co-design to efficiently and effectively solve all the major inefficiencies in the Baum-Welch algorithm for pHMMs.
-  We propose ApHMM, the first flexible acceleration framework that can significantly reduce computational and energy overheads of the Baum-Welch algorithm for pHMMs. ApHMM leverages hardware-software co-design to solve the major inefficiencies in the Baum-Welch algorithm by 1) designing a flexible hardware to support different pHMMs designs, 2) exploiting the predictable data dependency pattern in an on-chip memory with memoization techniques, 3) quickly eliminating negligible computations with a hardware-based filter, and 4) minimizing the redundant computations. We implement our 1) hardware-software optimizations on a specialized hardware and 2) software optimizations for GPUs to provide the first flexible Baum-Welch accelerator for pHMMs. ApHMM provides significant speedups of 15.55x-260.03x, 1.83x-5.34x, and 27.97x compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms the state-of-the-art CPU implementations of three important bioinformatics applications, 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x-59.94x, 1.03x-1.75x, and 1.03x-1.95x, respectively.</p>
+            <p>Profile hidden Markov models (pHMMs) are widely employed in various bioinformatics applications to identify similarities between biological sequences, such as DNA or protein sequences. In pHMMs, sequences are represented as graph structures, where states and edges capture modifications (i.e., insertions, deletions, and substitutions) by assigning probabilities to them. These probabilities are subsequently used to compute the similarity score between a sequence and a pHMM graph. The Baum-Welch algorithm, a prevalent and highly accurate method, utilizes these probabilities to optimize and compute similarity scores. Accurate computation of these probabilities is essential for the correct identification of sequence similarities. However, the Baum-Welch algorithm is computationally intensive, and existing solutions offer either software-only or hardware-only approaches with fixed pHMM designs. When we analyze state-of-the-art works, we identify an urgent need for a flexible, high-performance, and energy-efficient hardware-software co-design to address the major inefficiencies in the Baum-Welch algorithm for pHMMs.
+  We introduce ApHMM, the first flexible acceleration framework designed to significantly reduce both computational and energy overheads associated with the Baum-Welch algorithm for pHMMs. ApHMM employs hardware-software co-design to tackle the major inefficiencies in the Baum-Welch algorithm by 1) designing flexible hardware to accommodate various pHMM designs, 2) exploiting predictable data dependency patterns through on-chip memory with memoization techniques, 3) rapidly filtering out unnecessary computations using a hardware-based filter, and 4) minimizing redundant computations.
+  ApHMM achieves substantial speedups of 15.55x - 260.03x, 1.83x - 5.34x, and 27.97x when compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms state-of-the-art CPU implementations in three key bioinformatics applications: 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x - 59.94x, 1.03x - 1.75x, and 1.03x - 1.95x, respectively, while improving their energy efficiency by 64.24x - 115.46x, 1.75x, 1.96x.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_aphmm_2023</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM TACO}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Joel and Alser, Mohammed and Luna, Juan Gómez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Trans. Archit. Code Optim.}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Jo\"{e}l and Alser, Mohammed and Luna, Juan G\'{o}mez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">oct</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/ARXIV.2207.09765}</span><span class="p">,</span>
+  <span class="na">issn</span> <span class="p">=</span> <span class="s">{1544-3566}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://dl.acm.org/doi/10.1145/3632950}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3632950}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -365,7 +368,7 @@
 
         <!-- Entry bib key -->
         <div id="mutlu_accelerating_2023" class="col-sm-8">
-        <!-- Title --><div class="title">Accelerating Genome Analysis via Algorithm-Architecture Co-Design</div>
+        <!-- Title --><div class="title"><a href="https://ieeexplore.ieee.org/document/10247887" rel="external nofollow noopener" target="_blank">"Accelerating Genome Analysis via Algorithm-Architecture Co-Design",</a></div>
         <!-- Author -->
         <div class="author">
         
@@ -377,7 +380,7 @@
         
         
         <div class="periodical">
-          <em>In Proceedings of the 60th Design Automation Conference (DAC)</em>, Jul 2023
+          <em>In 2023 60th ACM/IEEE Design Automation Conference (DAC)</em>, Jul 2023
         </div>
         <div class="periodical">
           
@@ -391,8 +394,8 @@
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-altmetric-id="true"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/DAC56929.2023.10247887"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/DAC56929.2023.10247887" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
@@ -403,11 +406,13 @@
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mutlu_accelerating_2023</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 60th Design Automation Conference (DAC)}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2023 60th ACM/IEEE Design Automation Conference (DAC)}</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Accelerating Genome Analysis via Algorithm-Architecture Co-Design}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mutlu, Onur and Firtina, Can}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/DAC56929.2023.10247887}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://ieeexplore.ieee.org/document/10247887}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
