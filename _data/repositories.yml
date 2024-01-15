@@ -1,6 +1,7 @@
 github_repos:
   - CMU-SAFARI/RawHash
   - CMU-SAFARI/BLEND
+  - CMU-SAFARI/ApHMM-GPU
   - CMU-SAFARI/AirLift
   - CMU-SAFARI/Apollo
   - BilkentCompGen/hercules
