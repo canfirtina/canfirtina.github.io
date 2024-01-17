@@ -12,6 +12,8 @@ horizontal: false
 ___
 ## Talks
 
+* Can Firtina, **"RawHash and RawHash2: Enabling Fast and Accurate Real-time Analysis of Raw Nanopore Signals for Large Genomes using a Hash-based Seeding Mechanism"**, Invited Talk, *[Leibniz Institute for Immunotherapy (LIT)](https://lit.eu)*, Regensburg, Germany, January 17 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_01-lit-real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_01-lit-real-time_genome_analysis.pptx)
+
 * Can Firtina, **"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis"**, Conference Talk, *[High Performance, Edge And Cloud computing (HiPEAC) 2024](https://www.hipeac.net/2024/munich/)*, Munich, Germany, January 17 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/aphmm-firtina-2024-hipeac.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/aphmm-firtina-2024-hipeac.pptx)
 
 * Can Firtina, **"Enabling Fast, Accurate and Efficient Real-Time Genome Analysis via New Algorithms and Architectures"**, Invited Talk, *[Technical University of Munich (TUM) - School of Computation, Information and Technology](https://www.cit.tum.de)*, Munich, Germany, January 16 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_01-tum-enabling_real-time_acceleration.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_01-tum-enabling_real-time_acceleration.pptx)
