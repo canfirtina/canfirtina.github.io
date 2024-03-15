@@ -185,8 +185,8 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ACM TACO</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="firtina_aphmm_2023" class="col-sm-8">
-        <!-- Title --><div class="title"><a href="https://dl.acm.org/doi/10.1145/3632950" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis",</a></div>
+        <div id="firtina_aphmm_2024" class="col-sm-8">
+        <!-- Title --><div class="title"><a href="https://dl.acm.org/doi/10.1145/3632950" rel="external nofollow noopener" target="_blank">"ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-efficient Genome Analysis",</a></div>
         <!-- Author -->
         <div class="author">
         
@@ -198,7 +198,7 @@
         
         
         <div class="periodical">
-          <em>ACM Trans. Archit. Code Optim.</em>, Dec 2023
+          <em>ACM Trans. Archit. Code Optim.</em>, Feb 2024
         </div>
         <div class="periodical">
           
@@ -219,21 +219,26 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Profile hidden Markov models (pHMMs) are widely employed in various bioinformatics applications to identify similarities between biological sequences, such as DNA or protein sequences. In pHMMs, sequences are represented as graph structures, where states and edges capture modifications (i.e., insertions, deletions, and substitutions) by assigning probabilities to them. These probabilities are subsequently used to compute the similarity score between a sequence and a pHMM graph. The Baum-Welch algorithm, a prevalent and highly accurate method, utilizes these probabilities to optimize and compute similarity scores. Accurate computation of these probabilities is essential for the correct identification of sequence similarities. However, the Baum-Welch algorithm is computationally intensive, and existing solutions offer either software-only or hardware-only approaches with fixed pHMM designs. When we analyze state-of-the-art works, we identify an urgent need for a flexible, high-performance, and energy-efficient hardware-software co-design to address the major inefficiencies in the Baum-Welch algorithm for pHMMs.
-  We introduce ApHMM, the first flexible acceleration framework designed to significantly reduce both computational and energy overheads associated with the Baum-Welch algorithm for pHMMs. ApHMM employs hardware-software co-design to tackle the major inefficiencies in the Baum-Welch algorithm by 1) designing flexible hardware to accommodate various pHMM designs, 2) exploiting predictable data dependency patterns through on-chip memory with memoization techniques, 3) rapidly filtering out unnecessary computations using a hardware-based filter, and 4) minimizing redundant computations.
-  ApHMM achieves substantial speedups of 15.55x - 260.03x, 1.83x - 5.34x, and 27.97x when compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms state-of-the-art CPU implementations in three key bioinformatics applications: 1) error correction, 2) protein family search, and 3) multiple sequence alignment, by 1.29x - 59.94x, 1.03x - 1.75x, and 1.03x - 1.95x, respectively, while improving their energy efficiency by 64.24x - 115.46x, 1.75x, 1.96x.</p>
+            <p>Profile hidden Markov models (pHMMs) are widely employed in various bioinformatics applications to identify similarities between biological sequences, such as DNA or protein sequences. In pHMMs, sequences are represented as graph structures, where states and edges capture modifications (i.e., insertions, deletions, and substitutions) by assigning probabilities to them. These probabilities are subsequently used to compute the similarity score between a sequence and a pHMM graph. The Baum-Welch algorithm, a prevalent and highly accurate method, utilizes these probabilities to optimize and compute similarity scores. Accurate computation of these probabilities is essential for the correct identification of sequence similarities. However, the Baum-Welch algorithm is computationally intensive, and existing solutions offer either software-only or hardware-only approaches with fixed pHMM designs. When we analyze state-of-the-art works, we identify an urgent need for a flexible, high-performance, and energy-efficient hardware-software co-design to address the major inefficiencies in the Baum-Welch algorithm for pHMMs.We introduce ApHMM, the first flexible acceleration framework designed to significantly reduce both computational and energy overheads associated with the Baum-Welch algorithm for pHMMs. ApHMM employs hardware-software co-design to tackle the major inefficiencies in the Baum-Welch algorithm by (1) designing flexible hardware to accommodate various pHMM designs, (2) exploiting predictable data dependency patterns through on-chip memory with memoization techniques, (3) rapidly filtering out unnecessary computations using a hardware-based filter, and (4) minimizing redundant computations.ApHMM achieves substantial speedups of 15.55\texttimes–260.03\texttimes, 1.83\texttimes–5.34\texttimes, and 27.97\texttimes when compared to CPU, GPU, and FPGA implementations of the Baum-Welch algorithm, respectively. ApHMM outperforms state-of-the-art CPU implementations in three key bioinformatics applications: (1) error correction, (2) protein family search, and (3) multiple sequence alignment, by 1.29\texttimes–59.94\texttimes, 1.03\texttimes–1.75\texttimes, and 1.03\texttimes–1.95\texttimes, respectively, while improving their energy efficiency by 64.24\texttimes–115.46\texttimes, 1.75\texttimes, and 1.96\texttimes.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_aphmm_2023</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-Efficient Genome Analysis}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Trans. Archit. Code Optim.}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">firtina_aphmm_2024</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Firtina, Can and Pillai, Kamlesh and Kalsi, Gurpreet S. and Suresh, Bharathwaj and Cali, Damla Senol and Kim, Jeremie S. and Shahroodi, Taha and Cavlak, Meryem Banu and Lindegger, Jo\"{e}l and Alser, Mohammed and Luna, Juan G\'{o}mez and Subramoney, Sreenivas and Mutlu, Onur}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ApHMM: Accelerating Profile Hidden Markov Models for Fast and Energy-efficient Genome Analysis}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">issue_date</span> <span class="p">=</span> <span class="s">{March 2024}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Association for Computing Machinery}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{New York, NY, USA}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{21}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
   <span class="na">issn</span> <span class="p">=</span> <span class="s">{1544-3566}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://dl.acm.org/doi/10.1145/3632950}</span><span class="p">,</span>
   <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3632950}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Trans. Archit. Code Optim.}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">feb</span><span class="p">,</span>
+  <span class="na">articleno</span> <span class="p">=</span> <span class="s">{19}</span><span class="p">,</span>
+  <span class="na">numpages</span> <span class="p">=</span> <span class="s">{29}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://dl.acm.org/doi/10.1145/3632950}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
