@@ -10,7 +10,9 @@ horizontal: false
 ---
 
 ___
-## Talks
+## Talks and Invited Lectures
+
+* Can Firtina, **"Introduction to Real-Time Raw Nanopore Signal Analysis: RawHash and RawHash2"**, Invited Lecture, *BIO310 - Introduction to Bioinformatics*, *[Sabanci University](https://www.sabanciuniv.edu/en)*, Virtual, March 18 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_03-sabanci-real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_03-sabanci-real-time_genome_analysis.pptx)
 
 * Can Firtina, **"RawHash and RawHash2: Enabling Fast and Accurate Real-time Analysis of Raw Nanopore Signals for Large Genomes using a Hash-based Seeding Mechanism"**, Invited Talk, *[Leibniz Institute for Immunotherapy (LIT)](https://lit.eu)*, Regensburg, Germany, January 17 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_01-lit-real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_01-lit-real-time_genome_analysis.pptx)
 
