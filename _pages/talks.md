@@ -15,7 +15,7 @@ ___
 
 * Can Firtina, **"Enabling Fast, Accurate, and Efficient Real-Time Genomic Sequence Analysis via New Algorithms and Architectures"**, Invited Talk, *[Harvard University - John A. Paulson School of Engineering and Applied Sciences, hosted by Prof. Vijay Janapa Reddi](https://edge.seas.harvard.edu)*, Allston, MA, USA. May 9 2024.
 
-* Can Firtina, **"Real-time Analysis of Genomic Sequences from Nanopore Electrical Signals by Fast and Accurate Hash-based Search"**, Invited Talk, *[The Jackson Laboratory (JAX), hosted by Joshy George, Ph.D.](https://www.jax.org/people/joshy-george)*, Farmington, CT, USA. May 6 2024.
+* Can Firtina, **"Real-time Analysis of Genomic Sequences from Nanopore Electrical Signals by Fast and Accurate Hash-based Search"**, Invited Talk, *[The Jackson Laboratory (JAX), hosted by Joshy George, Ph.D.](https://www.jax.org/people/joshy-george)*, Farmington, CT, USA. May 6 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-jax-real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-jax-real-time_genome_analysis.pptx)
 
 * Can Firtina, **"Real-time Analysis of Genomic Sequences from Nanopore Electrical Signals by Fast and Accurate Hash-based Search"**, Invited Talk, *[Tufts University - Department of Computer Science, hosted by Prof. Lenore J. Cowen](https://facultyprofiles.tufts.edu/lenore-cowen)*, Medford, MA, USA. May 3 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-tufts-real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-tufts-real-time_genome_analysis.pptx)
 
