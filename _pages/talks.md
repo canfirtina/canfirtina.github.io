@@ -11,6 +11,8 @@ horizontal: false
 ___
 ## Talks and Invited Lectures
 
+* Can Firtina, **"Enabling Fast, Accurate, and Efficient Real-Time Genomic Sequence Analysis via New Algorithms and Architectures"**, Invited Talk, *[Huawei Research Center Zurich]((https://www.huawei.com/))*, Zurich, Switzerland. May 17 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-huawei_zurich-accelerating_real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-huawei_zurich-accelerating_real-time_genome_analysis.pptx)
+
 * Can Firtina, **"Real-time Sequence Analysis from Raw Nanopore Electrical Signals with Accurate Hash-based Search Mechanisms"**, Invited Talk, *[The Broad Institute of MIT and Harvard, hosted by Victoria Popic, Ph.D.](https://www.broadinstitute.org/bios/victoria-popic)*, Cambridge, MA, USA. May 10 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-broad-real-time_and_fuzzy_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-broad-real-time_and_fuzzy_genome_analysis.pptx)
 
 * Can Firtina, **"Real-time Analysis of Genomic Sequences from Nanopore Electrical Signals by Fast and Accurate Hash-based Search"**, Invited Talk, *[The Jackson Laboratory (JAX), hosted by Joshy George, Ph.D.](https://www.jax.org/people/joshy-george)*, Farmington, CT, USA. May 6 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-jax-real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-jax-real-time_genome_analysis.pptx)
