@@ -11,7 +11,7 @@ horizontal: false
 ___
 ## Talks and Invited Lectures
 
-* Can Firtina, **"Rawsamble: Overlapping and Assembling Raw Nanopore Signals using a Hash-based Seeding Mechanism"**, Conference Talk, *[32nb Annual Conference on Intelligent Systems for Molecular Biology (ISMB)](https://www.iscb.org/ismb2024/programme-schedule/scientific-programme/hitseq)*, Montreal, QC, Canada. July 14 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble-firtina-2024-ismb.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble-firtina-2024-ismb.pptx)
+* Can Firtina, **"Rawsamble: Overlapping and Assembling Raw Nanopore Signals using a Hash-based Seeding Mechanism"**, Conference Talk, *[32nd Annual Conference on Intelligent Systems for Molecular Biology (ISMB)](https://www.iscb.org/ismb2024/programme-schedule/scientific-programme/hitseq)*, Montreal, QC, Canada. July 14 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble-firtina-2024-ismb.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble-firtina-2024-ismb.pptx)
 
 * Can Firtina, **"Enabling Fast, Accurate, and Efficient Real-Time Genomic Sequence Analysis via New Algorithms and Architectures"**, Invited Talk, *[Huawei Research Center Zurich]((https://www.huawei.com/))*, Zurich, Switzerland. May 17 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-huawei_zurich-accelerating_real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_05-huawei_zurich-accelerating_real-time_genome_analysis.pptx)
 
