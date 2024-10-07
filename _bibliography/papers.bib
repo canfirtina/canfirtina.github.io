@@ -1,6 +1,23 @@
 ---
 ---
 
+@article{cavlak_targetcall_2024,
+  title = {{TargetCall}: {Eliminating} the {Wasted} {Computation} in {Basecalling} via {Pre}-{Basecalling} {Filtering}},
+  author = {Cavlak, Meryem Banu and Singh, Gagandeep and Alser, Mohammed and Firtina, Can and Lindegger, Joel and Sadrosadati, Mohammad and Ghiasi, Nika Mansouri and Alkan, Can and Mutlu, Onur},
+  year = {2024},
+  month = sep,
+  abstract = {Basecalling is an essential step in nanopore sequencing analysis where the raw signals of nanopore sequencers are converted into nucleotide sequences, i.e., reads. State-of-the-art basecallers employ complex deep learning models to achieve high basecalling accuracy. This makes basecalling computationally-inefficient and memory-hungry; bottlenecking the entire genome analysis pipeline. However, for many applications, the majority of reads do no match the reference genome of interest (i.e., target reference) and thus are discarded in later steps in the genomics pipeline, wasting the basecalling computation.To overcome this issue, we propose TargetCall, the first fast and widely-applicable pre-basecalling filter to eliminate the wasted computation in basecalling. TargetCall's key idea is to discard reads that will not match the target reference (i.e., off-target reads) prior to basecalling. TargetCall consists of two main components: (1) LightCall, a lightweight neural network basecaller that produces noisy reads; and (2) Similarity Check, which labels each of these noisy reads as on-target or off-target by matching them to the target reference. TargetCall filters out all off-target reads before basecalling; and the highly-accurate but slow basecalling is performed only on the raw signals whose noisy reads are labeled as on-target.Our thorough experimental evaluations using both real and simulated data show that TargetCall 1) improves the end-to-end basecalling performance of the state-of-the-art basecaller by 3.31x while maintaining high (98.88\%) sensitivity in keeping on-target reads, 2) maintains high accuracy in downstream analysis, 3) precisely filters out up to 94.71\% of off-target reads, and 4) achieves better performance, sensitivity, and generality compared to prior works. We freely open-source TargetCall to aid future research in pre-basecalling filtering at https://github.com/CMU-SAFARI/TargetCall.},
+  url = {https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2024.1429306/},
+  doi = {10.3389/fgene.2024.1429306},
+  journal = {Frontiers in Genetics},
+  abbr={Front. Genet.},
+  bibtex_show=true,
+  code={https://github.com/CMU-SAFARI/TargetCall},
+  pdf={https://arxiv.org/pdf/2212.04953.pdf},
+  altmetric={true},
+  dimensions={true},
+}
+
 @article{kim_airlift_2024,
   title = {{AirLift}: {A} {Fast} and {Comprehensive} {Technique} for {Remapping} {Alignments} between {Reference} {Genomes}},
   doi = {10.1109/TCBB.2024.3433378},
@@ -253,20 +270,6 @@
   altmetric={true},
   dimensions={true},
   selected=true,
-}
-
-@article{cavlak_targetcall_2022,
-  title = {{TargetCall}: {Eliminating} the {Wasted} {Computation} in {Basecalling} via {Pre}-{Basecalling} {Filtering}},
-  author = {Cavlak, Meryem Banu and Singh, Gagandeep and Alser, Mohammed and Firtina, Can and Lindegger, Joel and Sadrosadati, Mohammad and Ghiasi, Nika Mansouri and Alkan, Can and Mutlu, Onur},
-  year = {2022},
-  abstract = {Basecalling is an essential step in nanopore sequencing analysis where the raw signals of nanopore sequencers are converted into nucleotide sequences, i.e., reads. State-of-the-art basecallers employ complex deep learning models to achieve high basecalling accuracy. This makes basecalling computationally-inefficient and memory-hungry; bottlenecking the entire genome analysis pipeline. However, for many applications, the majority of reads do no match the reference genome of interest (i.e., target reference) and thus are discarded in later steps in the genomics pipeline, wasting the basecalling computation.To overcome this issue, we propose TargetCall, the first fast and widely-applicable pre-basecalling filter to eliminate the wasted computation in basecalling. TargetCall's key idea is to discard reads that will not match the target reference (i.e., off-target reads) prior to basecalling. TargetCall consists of two main components: (1) LightCall, a lightweight neural network basecaller that produces noisy reads; and (2) Similarity Check, which labels each of these noisy reads as on-target or off-target by matching them to the target reference. TargetCall filters out all off-target reads before basecalling; and the highly-accurate but slow basecalling is performed only on the raw signals whose noisy reads are labeled as on-target.Our thorough experimental evaluations using both real and simulated data show that TargetCall 1) improves the end-to-end basecalling performance of the state-of-the-art basecaller by 3.31x while maintaining high (98.88\%) sensitivity in keeping on-target reads, 2) maintains high accuracy in downstream analysis, 3) precisely filters out up to 94.71\% of off-target reads, and 4) achieves better performance, sensitivity, and generality compared to prior works. We freely open-source TargetCall to aid future research in pre-basecalling filtering at https://github.com/CMU-SAFARI/TargetCall.},
-  journal = {bioRxiv},
-  abbr={APBC},
-  bibtex_show=true,
-  code={https://github.com/CMU-SAFARI/TargetCall},
-  pdf={https://arxiv.org/pdf/2212.04953.pdf},
-  altmetric={true},
-  dimensions={true},
 }
 
 @article{firtina_blend_2023,
