@@ -11,6 +11,8 @@ horizontal: false
 ___
 ## Talks and Invited Lectures
 
+* Can Firtina, **"Rawsamble: Overlapping and Assembling Raw Nanopore Signals using a Hash-based Seeding Mechanism"**, Conference Talk, *[The Biological Data Science Meeting of Cold Spring Harbor Laboratory (CSHL) 2024](https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24)*, Cold Spring Harbor, NY, USA. Nov 14 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble_firtina_cshl-biological_data_science_2024.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble_firtina_cshl-biological_data_science_2024.pptx)
+
 * Can Firtina, **"Enabling Fast, Accurate, and Efficient Real-Time Genomic Sequence Analysis via New Algorithms and Architectures"**, Invited Talk, *[AMD](https://www.amd.com/en/corporate/research/about.html)*, Virtual. September 13 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_09-amd-accelerating_real-time_genome_analysis.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_09-amd-accelerating_real-time_genome_analysis.pptx)
 
 * Can Firtina, **"Rawsamble: Overlapping and Assembling Raw Nanopore Signals using a Hash-based Seeding Mechanism"**, Conference Talk, *[32nd Annual Conference on Intelligent Systems for Molecular Biology (ISMB)](https://www.iscb.org/ismb2024/programme-schedule/scientific-programme/hitseq)*, Montreal, QC, Canada. July 14 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble-firtina-2024-ismb.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawsamble-firtina-2024-ismb.pptx)
@@ -35,7 +37,7 @@ ___
 
 * Can Firtina, **"RawHash: enabling fast and accurate real-time analysis of raw nanopore signals for large genomes"**, Conference Talk, *[31st Annual Conference on Intelligent Systems for Molecular Biology (ISMB) and the 22nd European Conference on Computational Biology (ECCB)](https://www.iscb.org/ismbeccb2023-programme/tracks/hitseq)*, Lyon, France. July 25 2023. [[Video]](https://youtu.be/ti0M6TvRkTs) [[Slides (PDF)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023-ismbeccb.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023-ismbeccb.pptx)
 
-* Can Firtina, **"RawHash: enabling fast and accurate real-time analysis of raw nanopore signals for large genomes"**, Workshop Talk, *[The 5th Workshop on Accelerator Architecture in Computational Biology and Bioinformatics (AACBB)](https://aacbb-workshop.github.io)*, Orlando, Florida, USA. June 18 2023. [[Video]](https://youtu.be/-7_pFwriK9c) [[Slides (PDF)]](https://safari.ethz.ch/safari_public_wp/wp-content/uploads/rawhash-firtina-2023_06_18-aacbb.pdf.pdf) [[Slides (PPT)]](https://safari.ethz.ch/safari_public_wp/wp-content/uploads/rawhash-firtina-2023_06_18-aacbb.pptx)
+* Can Firtina, **"RawHash: enabling fast and accurate real-time analysis of raw nanopore signals for large genomes"**, Workshop Talk, *[The 5th Workshop on Accelerator Architecture in Computational Biology and Bioinformatics (AACBB)](https://aacbb-workshop.github.io)*, Orlando, Florida, USA. June 18 2023. [[Video]](https://youtu.be/-7_pFwriK9c) [[Slides (PDF)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023_06_18-aacbb.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/%7Efirtinac/pub/rawhash-firtina-2023_06_18-aacbb.pptx)
 
 * Can Firtina, **"BLEND: A fast, memory-efficient and accurate mechanism to find fuzzy seed matches in genome analysis"**, Conference Talk, *[27th Annual International Conference on Research in Computational Molecular Biology (RECOMB)](http://recomb2023.bilkent.edu.tr/index.html)*, Istanbul, Turkey. April 19 2023. [[Video]](https://youtu.be/k9NzGwaF_mE) [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/blend-firtina-2023_04_19-recomb.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/blend-firtina-2023_04_19-recomb.pptx)
 
@@ -53,7 +55,7 @@ ___
   * Reviewer/sub-reviewer for RECOMB, RECOMB-Seq, Bioinformatics, BMC Bioinformatics, MICRO, ISCA, HPCA, ASPLOS, PACT, IEEE Micro, FAST, DSN, IEEE Transactions on Computers, ISCAS, ISPASS, USENIX ATC.
   * Organized [BIO-Arch: Workshop on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/), jointly held with [RECOMB 2023](http://recomb2023.bilkent.edu.tr/index.html).
   * Organized the [Panel on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/panel/) at [RECOMB 2023](http://recomb2023.bilkent.edu.tr/program.html).
-  * Organized the [ExaBiome/PASSION/SAFARI Workshop on Architectures and HPC for Genomics](https://docs.google.com/document/d/18P82z6FU40PcAwMvb62ltQ1SBBxy6IIVQSlTdDJ8Jfo/edit) workshop with [Giulia Guidi](https://giuliaguidi.github.io). The workshop included 10 presenters from [ExaBiome](https://sites.google.com/lbl.gov/exabiome), [PASSION](https://passion.lbl.gov), and [SAFARI](https://safari.ethz.ch). May 26 2022, Virtual.
+  * Organized the ExaBiome/PASSION/SAFARI Workshop on Architectures and HPC for Genomics workshop with [Giulia Guidi](https://giuliaguidi.github.io). The workshop included 10 presenters from [ExaBiome](https://sites.google.com/lbl.gov/exabiome), [PASSION](https://passion.lbl.gov), and [SAFARI](https://safari.ethz.ch). May 26 2022, Virtual.
   
 ___
 ## Collaborators
