@@ -1,6 +1,23 @@
 ---
 ---
 
+@article{lindegger_rawalign_2024,
+	title = {{RawAlign}: {Accurate, Fast, and Scalable Raw Nanopore Signal Mapping via Combining Seeding and Alignment}},
+	author={Joël Lindegger and Can Firtina and Nika Mansouri Ghiasi and Mohammad Sadrosadati and Mohammed Alser and Onur Mutlu},
+	abstract = {Nanopore sequencers generate raw electrical signals representing the contents of a biological sequence molecule passing through the nanopore. These signals can be analyzed directly, avoiding base-calling entirely. We observe that while existing proposals for raw signal analysis typically do well in all metrics for small genomes ( e.g. , viral genomes), they all perform poorly for large genomes ( e.g. , the human genome). Our goal is to analyze raw nanopore signals in an accurate, fast, and scalable manner. To this end, we propose RawAlign, the first work to integrate fine-grained signal alignment into the state-of-the-art raw signal mapper. To enable accurate, fast, and scalable mapping with alignment, RawAlign implements three algorithmic improvements and hardware acceleration via a vectorized implementation of fine-grained alignment. Together, these significantly reduce the overhead of typically computationally expensive fine-grained alignment. Our extensive evaluations on different use cases and various datasets show RawAlign provides 1) the most accurate mapping for large genomes and 2) and on-par performance compared to RawHash (between 0.80×-1.08×), while achieving better performance than UNCALLED and Sigmap by on average (geo. mean) 2.83× and 2.06×, respectively. Availability: https://github.com/CMU-SAFARI/RawAlign.},
+	journal = {IEEE Access},
+	year = {2024},
+	month = {dec},
+	doi = {10.1109/ACCESS.2024.3520669},
+	url = {https://doi.org/10.1109/ACCESS.2024.3520669},
+  abbr={IEEE Access},
+  pdf={https://arxiv.org/pdf/2310.05037.pdf},
+  code={https://github.com/CMU-SAFARI/RawAlign},
+  bibtex_show=true,
+  altmetric={true},
+  dimensions={true},
+}
+
 @article{firtina_rawsamble_2024,
 	title = {{Rawsamble: Overlapping and Assembling Raw Nanopore Signals using a Hash-based Seeding Mechanism}},
 	author={Can Firtina and Maximilian Mordig and Harun Mustafa and Sayan Goswami and Nika Mansouri Ghiasi and Stefano Mercogliano and Furkan Eris and Joël Lindegger and Andre Kahles and Onur Mutlu},
@@ -191,23 +208,6 @@
   pdf={https://arxiv.org/pdf/2310.16908.pdf},
   url = {https://arxiv.org/abs/2310.16908},
   doi = {10.48550/ARXIV.2310.16908},
-  altmetric={true},
-  dimensions={true},
-}
-
-@article{lindegger_rawalign_2023,
-	title = {{RawAlign}: {Accurate, Fast, and Scalable Raw Nanopore Signal Mapping via Combining Seeding and Alignment}},
-	author={Joël Lindegger and Can Firtina and Nika Mansouri Ghiasi and Mohammad Sadrosadati and Mohammed Alser and Onur Mutlu},
-	abstract = {Nanopore-based sequencers generate a series of raw electrical signal measurements that represent the contents of a biological sequence molecule passing through the sequencer's nanopore. If the raw signal is analyzed in real-time, an irrelevant molecule can be ejected from the nanopore before it is completely sequenced, reducing sequencing time. To meet the low-latency and high-throughput requirements of the real-time analysis, a number of recent works propose the direct analysis of raw nanopore signals instead of traditional basecalling-based analysis approaches. We observe that while existing proposals for raw signal read mapping typically do well in all metrics for small reference databases (e.g., viral genomes), they all fail to scale to large reference databases (e.g., the human genome) in some aspect. Our goal is to analyze raw nanopore signals with high accuracy, high throughput, low latency, low memory usage, and needing few bases to be sequenced for a wide range of reference database sizes. To this end, we propose RawAlign, the first Seed-Filter-Align mapper for raw nanopore signals. Our evaluation shows that RawAlign is the only tool that can map raw nanopore signals to large reference databases ≥3117Mbp with high accuracy. Our evaluation shows that RawAlign generalizes well to a wide range of reference database sizes. In particular, RawAlign has a similar throughput to the overall prior state-of-the-art RawHash (between 0.80x-1.08x) while improving accuracy on all datasets (between 1.02x-1.64x F-1 score). RawAlign provides a 2.83x (2.06x) speedup over Uncalled (Sigmap) on average (geo. mean) while improving accuracy by 1.35x (1.34x) in terms of F-1 score on average (geo. mean). Availability: https://github.com/cmu-safari/RawAlign.},
-	journal = {arXiv},
-	year = {2023},
-	month = {oct},
-	doi = {10.48550/arXiv.2310.05037},
-	url = {https://doi.org/10.48550/arXiv.2310.05037},
-  abbr={arXiv},
-  pdf={https://arxiv.org/pdf/2310.05037.pdf},
-  code={https://github.com/CMU-SAFARI/RawAlign},
-  bibtex_show=true,
   altmetric={true},
   dimensions={true},
 }
