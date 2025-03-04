@@ -11,6 +11,8 @@ horizontal: false
 ___
 ## Talks and Invited Lectures
 
+* Can Firtina, **"Accelerating AI-based Genome Analysis via Algorithm-Architecture Co-Design"**, Invited Conference Talk, *[Platform for Advanced Scientific Computing (PASC) 2025, Challenges in Systems Design for Omics](https://pasc25.pasc-conference.org)*, Switzerland. June 16 2025.
+
 * Can Firtina, **"Rawsamble: Overlapping and Assembling Raw Nanopore Signals using a Hash-based Seeding Mechanism"**, Conference Talk, *[The Biological Data Science Meeting of Cold Spring Harbor Laboratory (CSHL) 2024](https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24)*, Cold Spring Harbor, NY, USA. Nov 14 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/rawsamble_firtina_cshl-biological_data_science_2024.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/rawsamble_firtina_cshl-biological_data_science_2024.pptx)
 
 * Can Firtina, **"Enabling Fast, Accurate, and Efficient Real-Time Genome Analysis via New Algorithms and Techniques"**, PhD Thesis Defense, *[ETH Zurich](https://ethz.ch/en.html)*, Zurich, Switzerland. Nov 11 2024. [[Slides (PDF)]](https://people.ee.ethz.ch/~firtinac/pub/firtina_eth_defense_slides.pdf) [[Slides (PPT)]](https://people.ee.ethz.ch/~firtinac/pub/firtina_eth_defense_slides.pptx)
