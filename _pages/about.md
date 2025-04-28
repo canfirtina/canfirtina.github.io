@@ -19,6 +19,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Can Firtina is a senior researcher in the [SAFARI Research Group](https://safari.ethz.ch) and a lecturer at [ETH Zurich](https://ethz.ch/en.html). He recently defended his PhD thesis in November 2024, advised by [Prof. Onur Mutlu](https://people.inf.ethz.ch/omutlu/).
+Can Firtina is a senior researcher in the [SAFARI Research Group](https://safari.ethz.ch) and a lecturer at [ETH Zurich](https://ethz.ch/en.html). He recently received his PhD in December 2024, advised by [Prof. Onur Mutlu](https://people.inf.ethz.ch/omutlu/).
 
 His research interests broadly span bioinformatics and computer architecture topics, including real-time, accurate, fast, and energy-efficient genome analysis, hardware-software co-design for accelerating bioinformatics workloads, and developing computational tools for genome editing. His research has been published in major bioinformatics and computer architecture venues.

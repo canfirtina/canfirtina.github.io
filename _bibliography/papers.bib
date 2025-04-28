@@ -1,6 +1,33 @@
 ---
 ---
 
+@inproceedings{soysal_mars_2025,
+  title = {{MARS}: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem},
+  author = {Melina Soysal and Konstantina Koliogeorgi and Can Firtina and Nika Mansouri Ghiasi and Rakesh Nadig and Haiyu Mao and Geraldo Francisco de Oliveira Junior and Yu Liang and Klea Zambaku and Mohammad Sadrosadati and Onur Mutlu},
+  booktitle = {39th International Conference on Supercomputing (ICS)},
+  year = {2025},
+  month = {jun},
+  note = {Recently accepted},
+  abbr = {ICS},
+  bibtex_show = true
+}
+
+@article{mansouri_ghiasi_sage_2025,
+	title = {{SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Analysis}},
+	author={Nika Mansouri Ghiasi and Talu Güloglu and Harun Mustafa and Can Firtina and Konstantina Koliogeorgi and Konstantinos Kanellopoulos and Haiyu Mao and Rakesh Nadig and Mohammad Sadrosadati and Jisung Park and Onur Mutlu},
+	abstract = {Given the exponentially growing volumes of genomic data, there are extensive efforts to accelerate genome analysis. We demonstrate a major bottleneck that greatly limits and diminishes the benefits of state-of-the-art genome analysis accelerators: the data preparation bottleneck, where genomic data is stored in compressed form and needs to be decompressed and formatted first before an accelerator can operate on it. To mitigate this bottleneck, we propose SAGe, an algorithm-architecture co-design for highly-compressed storage and high-performance access of large-scale genomic data. SAGe overcomes the challenges of mitigating the data preparation bottleneck while maintaining high compression ratios (comparable to genomic-specific compression algorithms) at low hardware cost. This is enabled by leveraging key features of genomic datasets to co-design (i) a new (de)compression algorithm, (ii) hardware, (iii) storage data layout, and (iv) interface commands to access storage. SAGe stores data in structures that can be rapidly interpreted and decompressed by efficient streaming accesses and lightweight hardware. To achieve high compression ratios using only these lightweight structures, SAGe exploits unique features of genomic data. We show that SAGe can be seamlessly integrated with a broad range of genome analysis hardware accelerators to mitigate their data preparation bottlenecks. Our results demonstrate that SAGe improves the average end-to-end performance and energy efficiency of two state-of-the-art genome analysis accelerators by 3.0x-32.1x and 18.8x-49.6x, respectively, compared to when the accelerators rely on state-of-the-art decompression tools.},
+	journal = {arXiv},
+	year = {2025},
+	month = {mar},
+	doi = {10.48550/arXiv.2504.03732},
+	url = {https://doi.org/10.48550/arXiv.2504.03732},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2504.03732},
+  bibtex_show=true,
+  altmetric={true},
+  dimensions={true},
+}
+
 @article{lindegger_rawalign_2024,
 	title = {{RawAlign}: {Accurate, Fast, and Scalable Raw Nanopore Signal Mapping via Combining Seeding and Alignment}},
 	author={Joël Lindegger and Can Firtina and Nika Mansouri Ghiasi and Mohammad Sadrosadati and Mohammed Alser and Onur Mutlu},

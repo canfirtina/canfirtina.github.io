@@ -20,7 +20,7 @@ nav_order: 5
 ___
 ## Selected Software
 
-**RawHash (and RawHash2):** RawHash (and RawHash2) is a hash-based mechanism to map raw nanopore signals to a reference genome in real-time. To achieve this, it 1) generates an index from the reference genome and 2) efficiently and accurately maps the raw signals to the reference genome such that it can match the throughput of nanopore sequencing even when analyzing large genomes (e.g., human genome.
+**RawHash, RawHash2 and Rawsamble:** RawHash (and RawHash2) is a hash-based mechanism to map raw nanopore signals to a reference genome in real-time. To achieve this, it 1) generates an index from the reference genome and 2) efficiently and accurately maps the raw signals to the reference genome such that it can match the throughput of nanopore sequencing even when analyzing large genomes (e.g., human genome). Rawsamble builds on the same collision‑resistant hashing framework in a reference‑free setting: it performs an all‑vs‑all search for long overlaps directly between raw signals, outputs a PAF overlap graph, and can drive assemblers such as **miniasm** to generate *de novo* assemblies—without ever base‑calling the signals.
 
 Below figure shows the overview of the steps that RawHash takes to find matching regions between a reference genome and a raw nanopore signal.
 
@@ -30,7 +30,7 @@ Below figure shows the overview of the steps that RawHash takes to find matching
 
 To efficiently identify similarities between a reference genome and reads, RawHash has two steps, similar to regular read mapping tools, 1) indexing and 2) mapping. The indexing step generates hash values from the expected signal representation of a reference genome and stores them in a hash table. In the mapping step, RawHash generates the hash values from raw signals and queries the hash table generated in the indexing step to find seed matches. To map the raw signal to a reference genome, RawHash performs chaining over the seed matches.
 
-RawHash can be used to map reads from **FAST5, POD5, or SLOW5** files to a reference genome in sequence format.
+RawHash can be used to map reads from **FAST5, POD5, SLOW5, or BLOW5** files to a reference genome in sequence format.
 
 RawHash performs real-time mapping of nanopore raw signals. When the prefix of reads can be mapped to a reference genome, RawHash will stop mapping and provide the mapping information in PAF format. We follow the similar PAF template used in [UNCALLED](https://github.com/skovaka/UNCALLED) and [Sigmap](https://github.com/haowenz/sigmap) to report the mapping information.
 
@@ -55,3 +55,12 @@ RawHash performs real-time mapping of nanopore raw signals. When the prefix of r
 **Apollo:** Third-generation sequencing technologies can sequence long reads that contain as many as 2 million base pairs. These long reads are used to construct an assembly (i.e. the subject’s genome), which is further used in downstream genome analysis. Unfortunately, third-generation sequencing technologies have high sequencing error rates and a large proportion of base pairs in these long reads is incorrectly identified. These errors propagate to the assembly and affect the accuracy of genome analysis. Assembly polishing algorithms minimize such error propagation by polishing or fixing errors in the assembly by using information from alignments between reads and the assembly (i.e. read-to-assembly alignment information). However, current assembly polishing algorithms can only polish an assembly using reads from either a certain sequencing technology or a small assembly. Such technology-dependency and assembly-size dependency require researchers to (i) run multiple polishing algorithms and (ii) use small chunks of a large genome to use all available readsets and polish large genomes, respectively.We introduce Apollo, a universal assembly polishing algorithm that scales well to polish an assembly of any size (i.e. both large and small genomes) using reads from all sequencing technologies (i.e. second- and third-generation). Our goal is to provide a single algorithm that uses read sets from all available sequencing technologies to improve the accuracy of assembly polishing and that can polish large genomes. Apollo (i) models an assembly as a profile hidden Markov model (pHMM), (ii) uses read-to-assembly alignment to train the pHMM with the Baum-Welch algorithm and (iii) decodes the trained model with the Viterbi algorithm to produce a polished assembly. Our experiments with real readsets demonstrate that Apollo is the only algorithm that (i) uses reads from any sequencing technology within a single run and (ii) scales well to polish large assemblies without splitting the assembly into multiple parts.
 
 [GitHub Link](https://github.com/CMU-SAFARI/Apollo) \| [Apollo Paper Link (Bioinformatics)](https://academic.oup.com/bioinformatics/article/36/12/3669/5804978?login=true)
+
+**ApHMM‑GPU:** ApHMM‑GPU is the first GPU implementation of the Baum–Welch expectation‑maximization algorithm for profile Hidden Markov Models (pHMMs). It accelerates the forward–backward and parameter‑update steps across thousands of CUDA cores, delivering large speed‑ups over CPU baselines and enabling fast, energy‑efficient genome analysis.
+[GitHub Link](https://github.com/CMU-SAFARI/ApHMM-GPU)
+
+**Hercules:** Hercules applies profile Hidden Markov Model‑based statistical learning to correct systematic sequencing errors in both DNA and RNA long‑read datasets, boosting the accuracy of downstream mapping and assembly.  
+[GitHub Link](https://github.com/BilkentCompGen/hercules)
+
+**On Genomic Repeats and Reproducibility:** This repository contains scripts and pipelines that detect, quantify, and report reproducibility issues in popular variant‑calling workflows (e.g., BWA‑MEM + GATK HaplotypeCaller) that stem from repetitive genomic regions, helping researchers build more robust analyses.  
+[GitHub Link](https://github.com/calkan/reproducibility)
