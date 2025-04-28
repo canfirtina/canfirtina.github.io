@@ -35,7 +35,7 @@
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             {% endif %}
             {%- if site.twitter_username -%}
-            <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://x.com/{{ site.twitter_username }}" title="X"><i class="fab fa-twitter"></i></a>
             {% endif %}
             {%- if site.mastodon_username -%}
             <a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fab fa-mastodon"></i></a>
@@ -69,6 +69,9 @@
             {% endif %}
             {%- if site.dblp_url -%}
             <a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
+            {% endif %}
+            {%- if site.bluesky_url -%}
+            <a href="{{ site.bluesky_url }}" title="Bluesky"><i class="ai ai-bluesky"></i></a>
             {% endif %}
             {%- if site.stackoverflow_id -%}
             <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fab fa-stack-overflow"></i></a>
