@@ -15,6 +15,10 @@ ___
 - **Accelerating AI-Based Genome Analysis via Algorithm-Architecture Co-Design**  
    Invited conference talk, *[Platform for Advanced Scientific Computing (PASC) 2025, Challenges in Systems Design for Omics](https://pasc25.pasc-conference.org/)*, Switzerland. June 16 2025.
 
+- **Fast and Efficient Genome Analysis via New Algorithms and Architectures**  
+   Invited talk, *[GenScale Team of Inria at the University of Rennes](https://team.inria.fr/genscale/)* (host: Pierre Peterlongo), Rennes, France. May 6 2025.  
+   Slides ([PDF](https://people.ee.ethz.ch/~firtinac/pub/firtina-2025_05-inria-fast_efficient_genome_analysis.pdf) / [PPT](https://people.ee.ethz.ch/~firtinac/pub/firtina-2025_05-inria-fast_efficient_genome_analysis.pptx))
+
 - **Enabling Fast, Accurate, and Efficient Real-Time Genomic Sequence Analysis via New Algorithms and Architectures**  
    Invited talk, *[AMD](https://www.amd.com/en/corporate/research/about.html)* (virtual). September 13 2024.  
    Slides ([PDF](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_09-amd-accelerating_real-time_genome_analysis.pdf) / [PPT](https://people.ee.ethz.ch/~firtinac/pub/firtina-2024_09-amd-accelerating_real-time_genome_analysis.pptx))
