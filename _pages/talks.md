@@ -109,7 +109,7 @@ ___
 
   * PC Member: HPCA 2026
   * Reviewer/sub-reviewer for RECOMB, RECOMB-Seq, ACM-BCB, Bioinformatics, BMC Bioinformatics, MICRO, ISCA, HPCA, ASPLOS, PACT, IEEE Micro, FAST, DSN, IEEE Transactions on Computers, ISCAS, ISPASS, USENIX ATC.
-  * Organized Workshops, Panels, Tutorials
-   - [BIO-Arch: Workshop on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/), jointly held with [RECOMB 2023](http://recomb2023.bilkent.edu.tr/index.html).
-   - [Panel on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/panel/) at [RECOMB 2023](http://recomb2023.bilkent.edu.tr/program.html).
+  * Organized Workshops, Panels, Tutorials:
+    * [BIO-Arch: Workshop on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/), jointly held with [RECOMB 2023](http://recomb2023.bilkent.edu.tr/index.html).
+    * [Panel on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/panel/) at [RECOMB 2023](http://recomb2023.bilkent.edu.tr/program.html).
   
