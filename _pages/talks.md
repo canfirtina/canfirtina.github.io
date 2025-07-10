@@ -107,37 +107,9 @@ ___
 ___
 ## Services & Activities
 
-  * Reviewer/sub-reviewer for RECOMB, RECOMB-Seq, Bioinformatics, BMC Bioinformatics, MICRO, ISCA, HPCA, ASPLOS, PACT, IEEE Micro, FAST, DSN, IEEE Transactions on Computers, ISCAS, ISPASS, USENIX ATC.
-  * Organized [BIO-Arch: Workshop on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/), jointly held with [RECOMB 2023](http://recomb2023.bilkent.edu.tr/index.html).
-  * Organized the [Panel on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/panel/) at [RECOMB 2023](http://recomb2023.bilkent.edu.tr/program.html).
-  * Organized the ExaBiome/PASSION/SAFARI Workshop on Architectures and HPC for Genomics workshop with [Giulia Guidi](https://giuliaguidi.github.io). The workshop included 10 presenters from [ExaBiome](https://sites.google.com/lbl.gov/exabiome), [PASSION](https://passion.lbl.gov), and [SAFARI](https://safari.ethz.ch). May 26 2022, Virtual.
+  * PC Member: HPCA 2026
+  * Reviewer/sub-reviewer for RECOMB, RECOMB-Seq, ACM-BCB, Bioinformatics, BMC Bioinformatics, MICRO, ISCA, HPCA, ASPLOS, PACT, IEEE Micro, FAST, DSN, IEEE Transactions on Computers, ISCAS, ISPASS, USENIX ATC.
+  * Organized Workshops, Panels, Tutorials
+   - [BIO-Arch: Workshop on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/), jointly held with [RECOMB 2023](http://recomb2023.bilkent.edu.tr/index.html).
+   - [Panel on Hardware Acceleration of Bioinformatics Workloads](https://safari.ethz.ch/recomb23-arch-workshop/panel/) at [RECOMB 2023](http://recomb2023.bilkent.edu.tr/program.html).
   
-___
-## Collaborators
-  * Onur Mutlu (ETH Zurich)
-  * Can Alkan (Bilkent University)
-  * Damla Senol Cali (Bionano Genomics)
-  * Jeremie S. Kim (Apple)
-  * Juan Gomez-Luna (NVIDIA)
-  * Mohammad Sadrosadati (ETH Zurich)
-  * Nika Mansouri Ghiasi (ETH Zurich)
-  * Joel Lindegger (ETH Zurich)
-  * Gagandeep Singh (AMD)
-  * Haiyu Mao (ETH Zurich)
-  * Taha Shahroodi (TU Delft)
-  * Andre Kahles (ETH Zurich)
-  * Harun Mustafa (ETH Zurich)
-  * Giulia Guidi (Cornell University)
-  * Sreenivas Subramoney (Intel Labs)
-  * Gurpreet S. Kalsi (Intel Labs)
-  * Kamlesh Pillai (Intel Labs)
-  * Mohammed Alser (ETH Zurich)
-  * Nour Almadhoun Alserr (ETH Zurich)
-  * Jisung Park (POSTECH)
-  * Konstantinos Kanellopoulos (ETH Zurich)
-  * Saugata Ghose (University of Illinois Urbana-Champaign)
-  * Serghei Mangul (USC)
-  * A. Ercument Cicek (Bilkent University)
-  * Oznur Tastan (Sabanci University)
-  * Levent Onural (Bilkent University)
-  * Ziv Bar-Joseph (Carnegie Mellon University)
