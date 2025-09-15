@@ -27,4 +27,4 @@ My interests span bioinformatics, artificial intelligence, and computer architec
 
 Previously, I was a Senior Researcher and Lecturer at [ETH Zurich](https://ethz.ch/en.html), where I taught courses on [accelerating genome analysis with hardware–algorithm co-design](https://safari.ethz.ch/projects_and_seminars/spring2025/doku.php?id=bioinformatics). Lecture videos and materials are fully available on YouTube. I received my PhD from ETH Zurich, where I was advised by [Prof. Onur Mutlu](https://people.inf.ethz.ch/omutlu/) in the [SAFARI Research Group](https://safari.ethz.ch). I received my MSc and BSc in [Computer Engineering](https://cs.bilkent.edu.tr) from Bilkent University.
 
-**Prospective Students:** I am actively recruiting motivated students at multiple levels for my group. If you are interested in working with me, please contact me via [email](mailto:canfirtina@gmail.com).
+**Prospective Students:** I am actively recruiting motivated students at multiple levels for my group. If you are interested in working with me, please fill [this form](https://forms.gle/zH1xJmfVSeaskArd6).
